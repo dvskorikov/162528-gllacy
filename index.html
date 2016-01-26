@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="slider-background show-modal">
-      <header class="wrapper">
+      <header class="header-wrapper">
           <img class="main-logo" src="img/main-logo.psd" width="100" height="50" alt="логотип">
           
           <ul class="main-menu">
@@ -167,7 +167,7 @@
           <div class="quick-order-block-wrapper">
               <div class="quick-order-item">
                   <img class="hit-pict" src="img/hit-pict.png" width="24" height="24" alt="хит">
-                  <img class="ice-cream-pict" src="img/ice-cream-pict1.png" width="50" height="50" alt="картинка мороженки">
+                  <img class="ice-cream-pict" src="img/ice-cream-pict1.png" width="200" height="200" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">310</span>
                       <img class="ruble-symbol-pict" src="img/ruble-symbol.png" width="24" height="24" alt="символ рубля">
@@ -178,9 +178,9 @@
                   </div>
               </div>
               
-              <div>
+              <div class="quick-order-item">
                   <img class="hit-pict" src="img/hit-pict.png" width="24" height="24" alt="хит">
-                  <img class="ice-cream-pict" src="img/ice-cream-pict2.png" width="50" height="50" alt="картинка мороженки">
+                  <img class="ice-cream-pict" src="img/ice-cream-pict2.png" width="200" height="200" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">380</span>
                       <img class="ruble-symbol-pict" src="img/ruble-symbol.png" width="24" height="24" alt="символ рубля">
@@ -191,9 +191,9 @@
                   </div>
               </div>
               
-              <div>
+              <div class="quick-order-item">
                   <img class="hit-pict" src="img/hit-pict.png" width="24" height="24" alt="хит">
-                  <img class="ice-cream-pict" src="img/ice-cream-pict3.png" width="50" height="50" alt="картинка мороженки">
+                  <img class="ice-cream-pict" src="img/ice-cream-pict3.png" width="200" height="200" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">355</span>
                       <img class="ruble-symbol-pict" src="img/ruble-symbol.png" width="24" height="24" alt="символ рубля">
@@ -204,9 +204,9 @@
                   </div>
               </div>
               
-              <div>
+              <div class="quick-order-item">
                   <img class="hit-pict" src="img/hit-pict.png" width="24" height="24" alt="хит">
-                  <img class="ice-cream-pict" src="img/ice-cream-pict4.png" width="50" height="50" alt="картинка мороженки">
+                  <img class="ice-cream-pict" src="img/ice-cream-pict4.png" width="200" height="200" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">415</span>
                       <img class="ruble-symbol-pict" src="img/ruble-symbol.png" width="24" height="24" alt="символ рубля">
@@ -300,23 +300,49 @@
 
       <footer class="footer-wrapper">
           <div class="social-net-block">
-              <a class="social-net-link" href="#"><img class="social-net-pic" src="/img/twit-pic.png" width="24" height="24" alt="твиттер"></a>
-              <a class="social-net-link" href="#"><img class="social-net-pic" src="/img/insta-pic.png" width="24" height="24" alt="инстаграмм"></a>
-              <a class="social-net-link" href="#"><img class="social-net-pic" src="/img/fb-pic.png" width="24" height="24" alt="фэйсбук"></a>
-              <a class="social-net-link" href="#"><img class="social-net-pic" src="/img/vk-pic.png" width="24" height="24" alt="вконтакте"></a>
+              <a class="social-net-link" href="#">
+                  <img class="social-net-pic" src="/img/twit-pic.png" width="24" height="24" alt="твиттер">
+              </a>
+              
+              <a class="social-net-link" href="#">
+                  <img class="social-net-pic" src="/img/insta-pic.png" width="24" height="24" alt="инстаграмм">
+              </a>
+              
+              <a class="social-net-link" href="#">
+                  <img class="social-net-pic" src="/img/fb-pic.png" width="24" height="24" alt="фэйсбук">
+              </a>
+              
+              <a class="social-net-link" href="#">
+                  <img class="social-net-pic" src="/img/vk-pic.png" width="24" height="24" alt="вконтакте">
+              </a>
           </div>
           
           <div class="footer-quick-links-block">
-              <img class="" src="img/small-heart-icon.png" width="15" height="15" alt="сердце"><b><a class="footer-quick-links" href="#">Для поставщиков</a></b>
-              <a class="footer-quick-links" href="#">О производстве</a>
-              <a class="footer-quick-links" href="#">Наши документы</a>
-              <a class="footer-quick-links" href="#">Экологические стандарты</a>
+              <a class="footer-quick-links" href="#">
+                  <img class="" src="img/small-heart-icon.png" width="15" height="15" alt="сердце">
+                  <b>Для поставщиков</b>
+              </a>
+              
+              <a class="footer-quick-links" href="#">
+                  О производстве
+              </a>
+              
+              <a class="footer-quick-links" href="#">
+                  Наши документы
+              </a>
+              
+              <a class="footer-quick-links" href="#">
+                  Экологические стандарты
+              </a>
           </div>
           
           <div class="made-by-block">
               <img class="made-by-logo" src="img/made-by-logo.png" width="200" height="50" alt="HTML Академия">
-              <span class="made-by-name">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</span>
+              <span class="made-by-name">
+                  Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
+              </span>
           </div>
+          
       </footer>
       
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
