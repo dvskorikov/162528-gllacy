@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Academy: Глейси - Каталог</title>
+    </head>
     <body class="slider-background">
       <header class="header-wrapper">
-          <img class="main-logo" src="img/main-logo.psd" width="100" height="50" alt="логотип">
+          <a class="main-menu-logo" href="index.html"><img class="main-logo" src="img/main-logo.psd" width="100" height="50" alt="логотип"></a>
           
           <ul class="main-menu">
               <li class="menu-active-item">
                   <a href="index.html">Каталог</a>
+                  
+                  <ul class="submenu">
+                      <li class="submenu-new-items">
+                          <a href="#">Новинки</a>
+                      </li>
+                      <li>
+                          <a href="catalog.html">Сливочное</a>
+                      </li>
+                      <li>
+                          <a href="#">Щербеты</a>
+                      </li>
+                      <li>
+                          <a href="#">Фруктовый лед</a>
+                      </li>
+                      <li>
+                          <a href="#">Мелорин</a>
+                      </li>
+                  </ul>
+                  
               <li>
                   <a href="#">Доставка и оплата</a>
               </li>
@@ -19,31 +38,36 @@
               </li>
           </ul>
           
-          <div class="login_block">
-              <a class="top-menu-btn search-btn" href="#">
-                  <img class="search-icon" src="img/search-icon.png" width="24" height="24" alt="поиск">
-              </a>
-              <div class="top-menu-search-section">
-                  <input class="top-menu-fields global-searfh-field" type="text" name="global-search-field" id="global-search-field" placeholder="Что ищем?" required>
+          <div class="login-block">
+              <div class="top-menu-search-btn-wrapper">     
+                  <a class="top-menu-btn search-btn search-icon" href="#"></a>
+              
+                  <input class="top-menu-fields global-search-field" type="text" name="global-search-field" id="global-search-field" placeholder="Что ищем?" required>
               </div>
               
-              <a class="top-menu-btn login-btn" href="#">
-                  <img class="login-icon" src="img/login-icon.png"  width="24" height="24" alt="логин">
+              <a class="top-menu-btn login-btn login-icon" href="#">
                   Вход
               </a>
-              <form class="top-menu-login-form" action="https://echo.htmlacademy.ru" method="post" id="login-form">
-                  <input class="top-menu-fields login-form-email" type="email" name="login-form-email" id="login-form-email" placeholder="Электронная почта" required>
-                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" id="login-form-passwd" placeholder="Пароль" required>
-                  <button class="btn login-form-btn" type="submit" name="login-form-btn" id="login-form-btn">Войти</button>
-                  <a class="top-menu-login-form-link" href="#" id="forget-passwd-lnk">Забыли пароль?</a>
-                  <a class="top-menu-login-form-link" href="#" id="new-registration-lnk">Новая регистрация</a>
-              </form>
               
-              <a class="top-menu-btn backet-btn" href="#">
-                  <img class="backet-icon" src="img/backet-icon.png"  width="24" height="24" alt="корзина">
-                  Пусто
-              </a>
+              <form class="top-menu-login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <input class="top-menu-fields login-form-email" type="email" name="login-form-email" placeholder="Электронная почта" required>
+                  
+                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" placeholder="Пароль" required>
+                  
+                  <button class="btn login-form-btn" type="submit" name="login-form-btn">
+                      Войти
+                  </button>
+                  
+                  <a class="top-menu-login-form-link" href="#">Забыли пароль?</a>
+                  
+                  <a class="top-menu-login-form-link" href="#">Новая регистрация</a>
+              </form>
+
               <div class="top-menu-backet-wrapper">
+                  <a class="top-menu-btn backet-btn backet-icon" href="#">
+                      Пусто
+                  </a>
+                 
                   <table class="top-menu-backet-table">
                       <tr>
                           <td class="backet-table-cell backet-table-cell-del-btn">
@@ -202,7 +226,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочное с<br>апельсиновым джемом<br>и цитрусовой стружкой
+                      Сливочное с апельсиновым джемом и цитрусовой стружкой
                   </div>
               </div>
               
@@ -214,7 +238,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочно-кофейное с<br>кусочками шоколада
+                      Сливочно-кофейное с кусочками шоколада
                   </div>
               </div>
               
@@ -226,7 +250,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочно-клубничное с<br>присыпкой из белого<br>шоколада
+                      Сливочно-клубничное с присыпкой из белого шоколада
                   </div>
                   <a class="btn" href="#" id="catalog-quick-order-link">Быстрый просмотр</a>
               </div>
@@ -239,7 +263,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочное крем-брюле<br>с карамельной<br>подливкой
+                      Сливочное крем-брюле с карамельной подливкой
                   </div>
               </div>
 
@@ -251,7 +275,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочное с<br>брусничным джемом
+                      Сливочное с брусничным джемом
                   </div>
               </div>
 
@@ -263,7 +287,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочно-черничное с<br>цельными ягодами<br>черники
+                      Сливочно-черничное с цельными ягодами черники
                   </div>
               </div>
 
@@ -275,7 +299,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочно-лимонное с<br>карамельной<br>присыпкой
+                      Сливочно-лимонное с карамельной присыпкой
                   </div>
               </div>
 
@@ -287,7 +311,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочное с<br>шоколадной стружкой
+                      Сливочное с шоколадной стружкой
                   </div>
               </div>
 
@@ -299,7 +323,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочно-ванильное с<br>кусочками шоколада
+                      Сливочно-ванильное с кусочками шоколада
                   </div>
               </div>
 
@@ -311,7 +335,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочноe с<br>ментоловым сиропом
+                      Сливочноe с ментоловым сиропом
                   </div>
               </div>
 
@@ -323,7 +347,7 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочное с кусочками<br>черного шоколада
+                      Сливочное с кусочками черного шоколада
                   </div>
               </div>
 
@@ -335,15 +359,15 @@
                       /кг
                   </div>
                   <div class="item-descript">
-                      Сливочное с мятным<br>сиропом
+                      Сливочное с мятным сиропом
                   </div>
               </div>
                             
           </div>
           
-          <div class="catalog-paginator">
-              <ul class="catalog-paginator-pages">
-                  <li class="catalog-paginator-selected-page">
+          <div class="paginator">
+              <ul class="paginator-pages">
+                  <li class="paginator-selected-page">
                       <a href="#">1</a>
                   </li>
                   
@@ -368,26 +392,25 @@
       
       <footer class="footer-wrapper">
           <div class="social-net-block">
-              <a class="social-net-link" href="#">
-                  <img class="social-net-pic" src="/img/twit-pic.png" width="24" height="24" alt="твиттер">
+              <a class="social-net-link twitter-pic" href="#">
+                  Twitter
               </a>
               
-              <a class="social-net-link" href="#">
-                  <img class="social-net-pic" src="/img/insta-pic.png" width="24" height="24" alt="инстаграмм">
+              <a class="social-net-link insta-pic" href="#">
+                  Instagramm
               </a>
               
-              <a class="social-net-link" href="#">
-                  <img class="social-net-pic" src="/img/fb-pic.png" width="24" height="24" alt="фэйсбук">
+              <a class="social-net-link facebook-pic" href="#">
+                  Facebook
               </a>
               
-              <a class="social-net-link" href="#">
-                  <img class="social-net-pic" src="/img/vk-pic.png" width="24" height="24" alt="вконтакте">
+              <a class="social-net-link vk-pic" href="#">
+                  ВКонтакте
               </a>
           </div>
           
           <div class="footer-quick-links-block">
-              <a class="footer-quick-links" href="#">
-                  <img class="" src="img/small-heart-icon.png" width="15" height="15" alt="сердце">
+              <a class="footer-quick-links small-heart-icon" href="#">
                   <b>Для поставщиков</b>
               </a>
               
