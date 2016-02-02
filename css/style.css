@@ -49,13 +49,14 @@ grid index-page
 }
 
 .header-wrapper {
+  float: left;
   min-width: 900px;
   max-width: 1200px;
   width: 100%;
   margin-top: 8px;
   padding: 0 1.5%;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: rgba(10, 175, 216, 0.4);
 }
 
 .main-logo {
@@ -107,19 +108,24 @@ grid index-page
 }
 
 .content-wrapper {
-
   background-color: rgba(1, 254, 1, 0.3);
 }
 
 .main-slider-wrapper {
+  float: left;
+  width: 100%;
+  min-width: 900px;
   font-size: 0;
   text-align: center;
-/*  margin-top: -91px;     <-отключил временно до решения наставника*/
+  margin-top: -91px;
+  box-sizing: border-box;
   background-color: coral;
 }
 
 .slide {
-  display: inline-block;
+/*  display: inline-block;
+  float: left; */
+  margin: 0 4.42%;
   min-width: 900px;
   background-color: rgba(1, 254, 1, 0.7);
   width: 91.19%;
@@ -132,6 +138,7 @@ grid index-page
 .slide > img {
   width: 91.19%;
   height: 76.79%;
+  min-width: 900px;
 }
 
 .slogan {
@@ -148,19 +155,22 @@ grid index-page
 .main-slider-btn {
   position: relative;
   display: inline-block;
+  top: -480px;
   min-width: 278px;
   height: 63px;
-  top: -480px;
   font-size: 31.48px;
 }
 
 .advertising-block-wrapper {
-  position: relative;
-/*  float: left; */
-  top: -433px;
+/*  position: relative; */
+/*  top: -433px;
+  float: left;
+  margin-top: -433px; */
+  margin-bottom: 40px;
   min-width: 900px;
   max-width: 100%;
   padding: 0 2.25%; /* 27px */
+  box-sizing: border-box;
   background-color: rgba(239, 254, 1, 1);
 }
 
@@ -178,8 +188,10 @@ grid index-page
 }
 
 .quick-order-block-wrapper {
-  position: relative;
-  top: -394px;
+/*  position: relative;
+  top: -394px; */
+  float: left;
+  margin-bottom: 40px;
   background-color: rgba(200, 25, 12, 0.7);
 }
 
@@ -197,12 +209,12 @@ grid index-page
 }
 
 .about-gllacy-wrapper {
-  position: relative;
-  top: -355px;
+/*  position: relative;
+  top: -355px; */
   min-width: 900px;
   max-width: 95.5%;
   min-height: 307px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 .about-gllacy-header {
@@ -243,8 +255,67 @@ grid index-page
 }
 
 .news-block-wrapper {
-position: relative;
-  top: -330px;
+  width: 100%; /*95.5%; */
+  min-width: 900px;
+  padding: 0 2.25%; /* 27px */
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  background-color: rgba(238, 114, 4, 0.5);
+}
+
+.news-block-item {
+  float: left;
+  width: 48.87%;
+  margin-right: 2.26%; /* 26px */
+  min-width: 420px;
+  min-height: 220px;
+  background-color: rgba(238, 114, 4, 0.7);
+}
+
+.news-block-item:last-child {
+  margin-right: 0;
+}
+
+.map-wrapper {
+  float: left;
+  width: 100%;
+  min-width: 900px;
+}
+
+.map-wrapper > img {
+  width: 100%;
+  height: 100%;
+  min-width: 900px;
+  min-height: 430px;
+}
+
+.footer-wrapper {
+  width: 100%;
+  min-width: 900px;
+  max-width: 1200px;
+  padding: 18px 2.25% 25px 2.25%;
+  box-sizing: border-box;
+  background-color: rgba(217, 109, 198, 0.3);
+}
+
+.footer-item {
+  float: left;
+  margin-right: 2.17%; /* 26px */
+  background-color: rgba(217, 109, 198, 0.5);
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.footer-social-net-block,
+.footer-made-by-block {
+  width: 22.25%; /* 267px */
+}
+
+.footer-quick-links-block {
+  width: 46.67%; /* 560px */
+  text-align: center;
 }
 
 /*
@@ -267,7 +338,7 @@ STYLES index-page
  border-radius: 40px;
 }
 
-.advertising-block {
+.item-border-radius {
   border-radius: 15px;
 }
 
@@ -281,11 +352,25 @@ STYLES index-page
 
 .about-gllacy-wrapper {
   background-image: url(../img/about-bg.jpg);
-  border-radius: 15px;
 }
 
 .about-gllacy-header {
   color: black;
   font-size: 24px;
   line-height: 30px;
+}
+
+.last-news-block {
+  color: black;
+  background-image: url(../img/blog-block-bg.png);
+}
+
+.last-news-header {
+  color: inherit;
+}
+
+.last-news-announcement-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
