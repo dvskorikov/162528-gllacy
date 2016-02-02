@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="slider-background">
-      <header class="header-wrapper">
+      <header class="header-wrapper clearfix">
           <img class="main-logo" src="img/logo.png" width="154" height="64" alt="логотип">
 
           <ul class="main-menu">
@@ -70,61 +71,64 @@
                   <a class="top-menu-btn backet-btn backet-icon" href="#">
                       Пусто
                   </a>
-                  <table class="top-menu-backet-table">
-                      <tr>
-                          <td class="backet-table-cell backet-table-cell-del-btn">
-                              <a class="backet-table-link-del-btn" href="#">
-                                  <img src="img/backet-del-icon.png" width="11" height="11" alt="удалить из корзины">
-                              </a>
-                          </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-pict">
-                              <img src="img/backet-item-pic1.png" width="33" height="33" alt="картинка товара">
-                          </td>
+                  <div class="top-menu-backet-show">
+                    <table class="top-menu-backet-table">
+                        <tr>
+                            <td class="backet-table-cell backet-table-cell-del-btn">
+                                <a class="backet-table-link-del-btn" href="#">
+                                    <img src="img/backet-del-icon.png" width="11" height="11" alt="удалить из корзины">
+                                </a>
+                            </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-descript">
-                              Пломбир с апельсиновым джемом
-                          </td>
+                            <td class="backet-table-cell backet-table-cell-item-pict">
+                                <img src="img/backet-item-pic1.png" width="33" height="33" alt="картинка товара">
+                            </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-price">
-                              1,5 кг <span class="table-cell-item-price">х 200 руб.</span>
-                          </td>
+                            <td class="backet-table-cell backet-table-cell-item-descript">
+                                Пломбир с апельсиновым джемом
+                            </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-subtot">
-                              300 руб.
-                          </td>
-                      </tr>
-                      <tr>
-                          <td class="backet-table-cell backet-table-cell-del-btn">
-                              <a class="backet-table-link-del-btn" href="#">
-                                  <img src="img/backet-del-icon.png" width="11" height="11" alt="удалить из корзины">
-                              </a>
-                          </td>
+                            <td class="backet-table-cell backet-table-cell-item-price">
+                                1,5 кг <span class="table-cell-item-price">х 200 руб.</span>
+                            </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-pict">
-                              <img src="img/backet-item-pic2.png" width="33" height="33" alt="картинка товара">
-                          </td>
+                            <td class="backet-table-cell backet-table-cell-item-subtot">
+                                300 руб.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="backet-table-cell backet-table-cell-del-btn">
+                                <a class="backet-table-link-del-btn" href="#">
+                                    <img src="img/backet-del-icon.png" width="11" height="11" alt="удалить из корзины">
+                                </a>
+                            </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-descript">
-                              Клубничный пломбир с присыпкой из белого шоколада
-                          </td>
+                            <td class="backet-table-cell backet-table-cell-item-pict">
+                                <img src="img/backet-item-pic2.png" width="33" height="33" alt="картинка товара">
+                            </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-price">
-                              1,5 кг <span class="table-cell-item-price">х 300 руб.</span>
-                          </td>
+                            <td class="backet-table-cell backet-table-cell-item-descript">
+                                Клубничный пломбир с присыпкой из белого шоколада
+                            </td>
 
-                          <td class="backet-table-cell backet-table-cell-item-subtot">
-                              450 руб.
-                          </td>
-                      </tr>
+                            <td class="backet-table-cell backet-table-cell-item-price">
+                                1,5 кг <span class="table-cell-item-price">х 300 руб.</span>
+                            </td>
 
-                  </table>
+                            <td class="backet-table-cell backet-table-cell-item-subtot">
+                                450 руб.
+                            </td>
+                        </tr>
 
-                  <div class="top-menu-backet-totals-block">
-                      <b class="top-menu-backet-totals-text">Итого: 750 руб.</b>
+                    </table>
+
+                    <div class="top-menu-backet-totals-block">
+                        <b class="top-menu-backet-totals-text">Итого: 750 руб.</b>
+                    </div>
+
+                    <a class="btn top-menu-backet-make-order-btn" href="#" id="top-menu-make-order-btn">Оформить заказ</a>
                   </div>
-
-                  <a class="btn top-menu-backet-make-order-btn" href="#" id="top-menu-make-order-btn">Оформить заказ</a>
               </div>
 
               <div class="working-time">
@@ -139,15 +143,15 @@
           <div class="main-slider-wrapper">
               <div class="slide">
                   <img class="pict-ice-cream" src="img/slider-main-pic1.png" width="1045" height="880" alt="картинка мороженного">
-                  <h2 class="slogan">Крем-брюле и пломбир с малиновым джемом</h2>
+                  <h2 class="slogan">Крем-брюле и пломбир с<br>малиновым джемом</h2>
               </div>
 
-              <div class="slide">
+              <div class="slide main-slider-hidden">
                   <img class="pict-ice-cream" src="img/slider-main-pic2.png" width="1045" height="880" alt="картинка мороженного">
                   <h2 class="slogan">Шоколадный пломбир и лимонный сорбет</h2>
               </div>
 
-              <div class="slide">
+              <div class="slide main-slider-hidden">
                   <img class="pict-ice-cream" src="img/slider-main-pic3.png" width="1045" height="880" alt="картинка мороженного">
                   <h2 class="slogan">Пломбир с помадкой и клубничный щербет</h2>
               </div>
@@ -158,8 +162,8 @@
 
           </div>
 
-          <div class="advertising-block-wrapper">
-              <article class="advertising-block advertising-background">
+          <div class="advertising-block-wrapper clearfix">
+              <article class="advertising-block advertising-background1">
                   <h3 class="advertising-header">Малинка даром!</h3>
                   <p class="advertising-description">
                       При покупке 2 кг любого фруктового мороженого, добавим
@@ -168,17 +172,17 @@
                   <a class="btn" href="#">Хочу варенье!</a>
               </article>
 
-              <article class="advertising-block advertising-background">
+              <article class="advertising-block advertising-background2">
                   <h3 class="advertising-header">Шоколадки даром!</h3>
                   <p class="advertising-description">
                       При покупке 2 кг пломбира, добавим в ваш заказ упаковку
                       вкуснейшей шоколадной присыпки  абсолютно бесплатно.
                   </p>
-                  <a class="btn" href="#">Хочу варенье!</a>
+                  <a class="btn" href="#">Хочу шоколадки!</a>
               </article>
           </div>
 
-          <div class="quick-order-block-wrapper">
+          <div class="quick-order-block-wrapper clearfix">
               <div class="quick-order-item hit-picture">
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic1.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
@@ -229,7 +233,7 @@
 
           </div>
 
-          <div class="about-gllacy-wrapper">
+          <div class="about-gllacy-wrapper clearfix">
               <h2 class="about-gllacy-header">
                   Магазин Глейси  — это онлайн и офлайн магазин
                   по продаже мороженого собственного производства на развес
@@ -244,20 +248,20 @@
               </div>
 
               <div class="about-gllacy-advantage">
-                  <img class="about-gllacy-small-icon" src="img/about-gllacy-block-small-icon2.png" width="48" height="49" alt="преимущества глэйси">
-                  <p class="about-gllacy-description">
-                      Для приготовления мороженого используются настоящие сливки и
-                      молоко высочайшего качества. Все дополнительные ингредиенты
-                      произведены из натурального, экологически чистого сырья.
-                  </p>
-              </div>
-
-              <div class="about-gllacy-advantage">
                   <img class="about-gllacy-small-icon" src="img/about-gllacy-block-small-icon3.png" width="48" height="49" alt="преимущества глэйси">
                   <p class="about-gllacy-description">
                       Закупка ингредиентов  производится только у проверенных
                       фермерских хозяйств и компаний, с которыми нас связывает
                       долговременное сотрудничество.
+                  </p>
+              </div>
+
+              <div class="about-gllacy-advantage">
+                  <img class="about-gllacy-small-icon" src="img/about-gllacy-block-small-icon2.png" width="48" height="49" alt="преимущества глэйси">
+                  <p class="about-gllacy-description">
+                      Для приготовления мороженого используются настоящие сливки и
+                      молоко высочайшего качества. Все дополнительные ингредиенты
+                      произведены из натурального, экологически чистого сырья.
                   </p>
               </div>
 
