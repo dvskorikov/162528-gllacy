@@ -53,8 +53,7 @@ grid index-page
   min-width: 900px;
   max-width: 1200px;
   width: 100%;
-  margin-top: 8px;
-  padding: 0 1.5%;
+  padding: 8px 1.5% 0 1.5%;
   box-sizing: border-box;
   background-color: rgba(10, 175, 216, 0.4);
 }
@@ -64,7 +63,7 @@ grid index-page
   margin-right: 29px;
 }
 
-.main-menu li {
+.main-menu > li {
   float: left;
   margin-right: 28px;
 
@@ -73,12 +72,15 @@ grid index-page
   background-color: yellow;
 }
 
-.main-menu {
+.main-menu .submenu {
+  position: absolute;
+  display: none;
+  list-style: none;
   background-color: lightyellow;
 }
 
-.submenu {
-  display: none;
+.main-menu > li:hover .submenu {
+  display: block;
 }
 
 .login-block {
@@ -168,7 +170,7 @@ grid index-page
   position: relative;
   min-width: 670px;
   min-height: 116px;
-  top: -490px;
+  top: -490px; /* old -490px */
 }
 
 .main-slider-btn {
@@ -214,6 +216,7 @@ grid index-page
   top: -394px; */
   float: left;
   margin-bottom: 40px;
+  text-align: center;
   font-size: 0;
   background-color: rgba(200, 25, 12, 0.7);
 }
@@ -221,11 +224,16 @@ grid index-page
 .quick-order-item {
   display: inline-block;
   width: 22.2%;
-  margin: 0 1.40% 40px 1.40%;
+/*  margin: 0 1.40% 40px 1.40%; */
+  margin: 0 2.26% 40px 0;
   vertical-align: top;
-  min-width: 10%;
   font-size: 16px;
   background-color: rgba(200, 25, 12, 0.5);
+}
+
+.quick-order-item:nth-child(4n) {
+  margin-right: 0;
+  background-color: salmon;
 }
 
 .quick-order-item > .ice-cream-pict {
@@ -322,12 +330,15 @@ grid index-page
   max-width: 1200px;
   padding: 18px 2.25% 25px 2.25%;
   box-sizing: border-box;
+  text-align: center;
+  font-size: 0;
   background-color: rgba(217, 109, 198, 0.3);
 }
 
 .footer-item {
   float: left;
   margin-right: 2.17%; /* 26px */
+  font-size: 16px;
   background-color: rgba(217, 109, 198, 0.5);
 }
 
@@ -342,8 +353,11 @@ grid index-page
 }
 
 .footer-quick-links-block {
+  display: inline-block;
   width: 46.67%; /* 560px */
   text-align: center;
+  font-size: 16px;
+  background-color: rgba(217, 109, 198, 0.5);
 }
 
 /*
@@ -415,22 +429,34 @@ grid catalog-page
 
 .breadcrumbs-wrapper {
   width: 100%;
+  padding: 0 2.25%;
   margin-bottom: 25px;
+  box-sizing: border-box;
   background-color: rgba(217, 109, 198, 0.3);
+}
+
+.breadcrumbs-list {
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs-list > li {
   float: left;
   width: 70px;
-  margin-left: 10px;
   padding-bottom: 10px;
   list-style: none;
+  background-color: rgba(217, 109, 198, 0.5);
 }
 
 .breadcrumbs-content-header {
   float: left;
-  clear: left;
-  margin-left: 10px;
+  width: 100%;
+  line-height: normal;
+  background-color: rgba(217, 109, 198, 0.7);
+}
+
+.breadcrumbs-list {
+  width: 100%;
 }
 
 /***************************
@@ -441,7 +467,9 @@ grid form-filter   {
   float: left;
   width: 100%;
   margin-bottom: 39px;
+  padding: 0 2.25%; /* 27px */
   font-size: 0;
+  box-sizing: border-box;
   background-color: rgba(1, 254, 1, 0.3);
 }
 
@@ -481,6 +509,10 @@ grid form-filter   {
 
 .item-list-wrapper {
   float: left;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: aqua;
 }
 
 .paginator {
@@ -495,3 +527,13 @@ grid form-filter   {
   font-size: 16px;
   list-style: none;
 }
+
+.item-descript {
+  text-align: center;
+}
+
+.paginator-pages li a {
+  text-decoration: none;
+}
+
+
