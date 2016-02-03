@@ -536,4 +536,47 @@ grid form-filter   {
   text-decoration: none;
 }
 
+.subscribe-form-block {
+  text-align: center;
+  background-image: repeating-linear-gradient(136deg,
+                      #f8f7f4 2%,   /* бел */
+                      #92cdff 2%,   /* син */
+                      #92cdff 3.5%, /* син */
+                      #f8f7f4 3.5%, /* бел */
+                      #f8f7f4 5%,   /* бел */
+                      #fe9e90 5%,   /* кра */
+                      #fe9e90 6.5%, /* кра */
+                      #f8f7f4 6.5%, /* бел */
+                      #f8f7f4 8%    /* бел */);
+}
+
+.form-background {
+  display: inline-block;
+  width: 97.85%;
+  min-width: 409px;
+  min-height: 210px;
+  margin: 1.07% 0;
+  border-radius: 15px;
+  font-size: 16px;
+  text-align: justify;
+  background-color: #f8f7f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
