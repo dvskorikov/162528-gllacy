@@ -538,6 +538,39 @@ grid form-filter   {
 
 .subscribe-form-block {
   text-align: center;
+  background-image: -webkit-repeating-linear-gradient(136deg,
+                      #f8f7f4 2%,   /* бел */
+                      #92cdff 2%,   /* син */
+                      #92cdff 3.5%, /* син */
+                      #f8f7f4 3.5%, /* бел */
+                      #f8f7f4 5%,   /* бел */
+                      #fe9e90 5%,   /* кра */
+                      #fe9e90 6.5%, /* кра */
+                      #f8f7f4 6.5%, /* бел */
+                      #f8f7f4 8%    /* бел */);
+
+  background-image: -moz-repeating-linear-gradient(136deg,
+                      #f8f7f4 2%,   /* бел */
+                      #92cdff 2%,   /* син */
+                      #92cdff 3.5%, /* син */
+                      #f8f7f4 3.5%, /* бел */
+                      #f8f7f4 5%,   /* бел */
+                      #fe9e90 5%,   /* кра */
+                      #fe9e90 6.5%, /* кра */
+                      #f8f7f4 6.5%, /* бел */
+                      #f8f7f4 8%    /* бел */);
+
+  background-image: -o-repeating-linear-gradient(136deg,
+                      #f8f7f4 2%,   /* бел */
+                      #92cdff 2%,   /* син */
+                      #92cdff 3.5%, /* син */
+                      #f8f7f4 3.5%, /* бел */
+                      #f8f7f4 5%,   /* бел */
+                      #fe9e90 5%,   /* кра */
+                      #fe9e90 6.5%, /* кра */
+                      #f8f7f4 6.5%, /* бел */
+                      #f8f7f4 8%    /* бел */);
+
   background-image: repeating-linear-gradient(136deg,
                       #f8f7f4 2%,   /* бел */
                       #92cdff 2%,   /* син */
