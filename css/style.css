@@ -111,6 +111,8 @@ grid index-page
   background-color: rgba(1, 254, 1, 0.3);
 }
 
+/* obsolete version
+
 .main-slider-wrapper {
   float: left;
   width: 100%;
@@ -124,7 +126,7 @@ grid index-page
 
 .slide {
 /*  display: inline-block;
-  float: left; */
+  float: left;
   margin: 0 4.42%;
   min-width: 900px;
   background-color: rgba(1, 254, 1, 0.7);
@@ -132,13 +134,34 @@ grid index-page
 /*  width: 1045px;
   height: 881hx;
   background-color: aqua;
-*/
+
 }
+
+*/
+
+/* obsolete version
 
 .slide > img {
   width: 91.19%;
   height: 76.79%;
   min-width: 900px;
+}
+
+*/
+
+.main-slider-wrapper {
+  text-align: center;
+  background-color: coral;
+}
+
+.slide {
+  background-color: rgba(1, 254, 1, 0.5);
+}
+
+.pict-ice-cream {
+  width: 91.19%;
+  height: 76.79%;
+  background-color: rgba(1, 254, 1, 0.7);
 }
 
 .slogan {
@@ -148,17 +171,16 @@ grid index-page
   top: -490px;
 }
 
-.main-slider-hidden {
-  display: none;
-}
-
 .main-slider-btn {
   position: relative;
-  display: inline-block;
   top: -480px;
   min-width: 278px;
   height: 63px;
   font-size: 31.48px;
+}
+
+.main-slider-hidden {
+  display: none;
 }
 
 .advertising-block-wrapper {
@@ -193,7 +215,6 @@ grid index-page
   float: left;
   margin-bottom: 40px;
   font-size: 0;
-  vertical-align: top;
   background-color: rgba(200, 25, 12, 0.7);
 }
 
@@ -201,6 +222,7 @@ grid index-page
   display: inline-block;
   width: 22.2%;
   margin: 0 1.40% 40px 1.40%;
+  vertical-align: top;
   min-width: 10%;
   font-size: 16px;
   background-color: rgba(200, 25, 12, 0.5);
