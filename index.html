@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body class="slider-background">
+  <body>
       <header class="header-wrapper clearfix">
           <img class="main-logo" src="img/logo.png" width="154" height="64" alt="логотип">
 
@@ -43,13 +44,15 @@
           </ul>
 
           <div class="login-block">
+             <div class="login-menu-positioning">
               <div class="top-menu-search-btn-wrapper">
-                  <a class="top-menu-btn search-btn search-icon" href="#"></a>
-
+                  <a class="top-menu-btn search-btn menu-search-icon" href="#"></a>
+                  <!-- <div class="global-search-field"> -->
                   <input class="top-menu-fields global-search-field" type="text" name="global-search-field" id="global-search-field" placeholder="Что ищем?" required>
+                  <!-- </div> -->
               </div>
 
-              <a class="top-menu-btn login-btn login-icon" href="#">
+              <a class="top-menu-btn login-btn menu-login-icon" href="#">
                   Вход
               </a>
 
@@ -67,8 +70,8 @@
                   <a class="top-menu-login-form-link" href="#">Новая регистрация</a>
               </form>
 
-              <div class="top-menu-backet-wrapper">
-                  <a class="top-menu-btn backet-btn backet-icon" href="#">
+              <div class="top-menu-basket-wrapper">
+                  <a class="top-menu-btn backet-btn menu-basket-icon" href="#">
                       Пусто
                   </a>
 
@@ -130,7 +133,7 @@
                     <a class="btn top-menu-backet-make-order-btn" href="#" id="top-menu-make-order-btn">Оформить заказ</a>
                   </div>
               </div>
-
+             </div>
               <div class="working-time">
                   с 10 до 20, ежедневно<br>
                   <b class="header-contact-phone">8 812 450-25-25</b>
@@ -138,28 +141,31 @@
           </div>
       </header>
 
-      <main class="content-wrapper clearfix">
-
-          <div class="main-slider-wrapper">
-              <div class="slide">
-                  <img class="pict-ice-cream" src="img/slider-main-pic1.png" width="900" height="735" alt="картинка мороженного">
-                  <h2 class="slogan">Крем-брюле и пломбир с<br>малиновым джемом</h2>
-              </div>
-
-              <div class="slide main-slider-hidden">
-                  <img class="pict-ice-cream" src="img/slider-main-pic2.png" width="1045" height="880" alt="картинка мороженного">
-                  <h2 class="slogan">Шоколадный пломбир и лимонный сорбет</h2>
-              </div>
-
-              <div class="slide main-slider-hidden">
-                  <img class="pict-ice-cream" src="img/slider-main-pic3.png" width="1045" height="880" alt="картинка мороженного">
-                  <h2 class="slogan">Пломбир с помадкой и клубничный щербет</h2>
-              </div>
-
-              <a class="btn main-slider-btn" href="#">
-                  Давайте оба!
-              </a>
+      <div class="main-slider-wrapper">
+          <div class="slide slide1">
+              <!-- <img class="pict-ice-cream" src="img/slider-main-pic1.png" width="900" height="735" alt="картинка мороженного"> -->
+              <h2 class="slogan">Крем-брюле и пломбир<br>с малиновым джемом</h2>
           </div>
+
+          <div class="slide slide2 main-slider-hidden">
+<!--              <img class="pict-ice-cream" src="img/slider-main-pic2.png" width="1045" height="880" alt="картинка мороженного">-->
+              <h2 class="slogan">Шоколадный пломбир<br>и лимонный сорбет</h2>
+          </div>
+
+          <div class="slide slide3 main-slider-hidden">
+<!--              <img class="pict-ice-cream" src="img/slider-main-pic3.png" width="1045" height="880" alt="картинка мороженного">-->
+              <h2 class="slogan">Пломбир с помадкой<br>и клубничный щербет</h2>
+          </div>
+
+      </div>
+
+  <div class="main-text-content-wrapper">
+     <div class="btn-main-positioning">
+        <a class="btn main-slider-btn" href="#">
+            <span>Давайте оба!</span>
+        </a>
+     </div>
+      <main class="content-wrapper clearfix">
 
           <div class="announce-block-wrapper clearfix">
               <article class="announce-block announce-background1 item-border-radius">
@@ -168,7 +174,11 @@
                       При покупке 2 кг любого фруктового мороженого, добавим
                       в ваш заказ банку малинового варенья бесплатно.
                   </p>
-                  <a class="btn" href="#">Хочу варенье!</a>
+                  <a class="btn announce-block-btn1" href="#">
+                    <span>
+                      Хочу варенье!
+                    </span>
+                  </a>
               </article>
 
               <article class="announce-block announce-background2 item-border-radius">
@@ -177,7 +187,11 @@
                       При покупке 2 кг пломбира, добавим в ваш заказ упаковку
                       вкуснейшей шоколадной присыпки  абсолютно бесплатно.
                   </p>
-                  <a class="btn" href="#">Хочу шоколадки!</a>
+                  <a class="btn announce-block-btn2" href="#">
+                    <span>
+                      Хочу шоколадки!
+                    </span>
+                  </a>
               </article>
           </div>
 
@@ -186,7 +200,7 @@
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic1.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">310</span>
-                      <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля">
+                      <!-- <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля"> -->
                       /кг
                   </div>
                   <div class="item-descript">
@@ -198,7 +212,7 @@
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic2.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">380</span>
-                      <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля">
+                      <!-- <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля"> -->
                       /кг
                   </div>
                   <div class="item-descript">
@@ -210,7 +224,7 @@
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic3.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">355</span>
-                      <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля">
+                      <!-- <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля"> -->
                       /кг
                   </div>
                   <div class="item-descript">
@@ -222,7 +236,7 @@
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic4.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">415</span>
-                      <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля">
+                      <!-- <img class="ruble-symbol-pict" src="img/ruble-symbol-icon.png" width="31" height="36" alt="символ рубля"> -->
                       /кг
                   </div>
                   <div class="item-descript">
@@ -237,8 +251,7 @@
                   Магазин Глейси  — это онлайн и офлайн магазин
                   по продаже мороженого собственного производства на развес
               </h2>
-              <div class="about-gllacy-advantage">
-                  <img class="about-gllacy-small-icon" src="img/about-gllacy-block-small-icon1.png" width="48" height="49" alt="преимущества глэйси">
+              <div class="about-gllacy-advantage about-gllacy-small-icon about-gllacy-block-small-icon1">
                   <p class="about-gllacy-description">
                       Все наше мороженое изготавливается на собственном производстве,
                       с использованием современного оборудования и проверенных
@@ -246,27 +259,24 @@
                   </p>
               </div>
 
-              <div class="about-gllacy-advantage">
-                  <img class="about-gllacy-small-icon" src="img/about-gllacy-block-small-icon3.png" width="48" height="49" alt="преимущества глэйси">
-                  <p class="about-gllacy-description">
+              <div class="about-gllacy-advantage about-gllacy-small-icon about-gllacy-block-small-icon3">
+                  <p class="about-gllacy-description about-gllacy-descrip-pos1">
                       Закупка ингредиентов  производится только у проверенных
                       фермерских хозяйств и компаний, с которыми нас связывает
                       долговременное сотрудничество.
                   </p>
               </div>
 
-              <div class="about-gllacy-advantage">
-                  <img class="about-gllacy-small-icon" src="img/about-gllacy-block-small-icon2.png" width="48" height="49" alt="преимущества глэйси">
-                  <p class="about-gllacy-description">
+              <div class="about-gllacy-advantage about-gllacy-small-icon about-gllacy-block-small-icon2">
+                  <p class="about-gllacy-description about-gllacy-description-pos">
                       Для приготовления мороженого используются настоящие сливки и
                       молоко высочайшего качества. Все дополнительные ингредиенты
                       произведены из натурального, экологически чистого сырья.
                   </p>
               </div>
 
-              <div class="about-gllacy-advantage">
-                  <img class="about-gllacy-small-icon" src="img/about-gllacy-block-small-icon4.png" width="48" height="49" alt="преимущества глэйси">
-                  <p class="about-gllacy-description">
+              <div class="about-gllacy-advantage about-gllacy-small-icon about-gllacy-block-small-icon4">
+                  <p class="about-gllacy-description about-gllacy-description-pos about-gllacy-descrip-pos1">
                       Доставка нашего мороженого до заказчиков осуществляется в
                       специальном термопаке, которая не дает мороженому растаять
                       в пути и позволяет ему сохранить свой превосходный вкус.
@@ -299,8 +309,8 @@
               </div>
           </div>
 
-          <div class="map-wrapper">
-              <img class="contact-map" src="img/map-block-bg-900.jpg" width="860" height="430" alt="как нас найти">
+          <div class="map-wrapper contact-map">
+              <!-- <img class="contact-map" src="img/map-block-bg-900.jpg" width="860" height="430" alt="как нас найти?"> -->
               <div class="feedback-form">
                   Адрес главного офиса и<br>офлайн магазина:<br>
                   <b class="contact-addr">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
@@ -316,20 +326,17 @@
 
       <footer class="footer-wrapper clearfix">
           <div class="footer-item footer-social-net-block">
-              <a class="social-net-link twitter-pic" href="#">
-                  Twitter
+              <a class="social-net-link twitter-icon" href="#tw">
               </a>
 
-              <a class="social-net-link insta-pic" href="#">
-                  Instagramm
+              <a class="social-net-link insta-pic" href="#ins">
+                  Insta
               </a>
 
-              <a class="social-net-link facebook-pic" href="#">
-                  Facebook
+              <a class="social-net-link fb-icon" href="#fb">
               </a>
 
-              <a class="social-net-link vk-pic" href="#">
-                  ВКонтакте
+              <a class="social-net-link vk-icon" href="#vk">
               </a>
           </div>
 
@@ -359,6 +366,7 @@
           </div>
 
       </footer>
+    </div>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
           <a class="feedback-form-close" href="#" id="form-close">
