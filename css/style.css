@@ -395,12 +395,13 @@ grid index-page
 .announce-block-wrapper {
   float: left;
   padding: 0 2.3%;
+  width: 100%;
   /*
   margin-bottom: 40px;
   min-width: 900px;
   max-width: 100%;
-  padding: 0 2.25%;
-  box-sizing: border-box; */
+  padding: 0 2.25%; */
+  box-sizing: border-box;
   margin-bottom: 40px;
   /* background-color: rgba(239, 254, 1, 1); */
 }
