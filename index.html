@@ -8,52 +8,55 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+      <input type="radio" id="slider-btn1" name="slider-btns" checked>
+      <input type="radio" id="slider-btn2" name="slider-btns">
+      <input type="radio" id="slider-btn3" name="slider-btns">
 
      <div class="body-slider-wrapper">
+       <div class="main-content-wrapper">
       <header class="header-wrapper clearfix">
           <img class="main-logo" src="img/logo.png" width="154" height="64" alt="логотип">
-          <input class="menu-pseudo-hover" id="menu-pseudo-hover" type="radio">
-          <ul class="main-menu">
-              <li>
-                <a class="main-menu-submenu" href="#">Каталог</a>
-                <label for="menu-pseudo-hover">
-                  <ul class="submenu">
-                      <li class="submenu-new-items">
-                          <a href="#">Новинки</a>
-                      </li>
-                      <li>
-                          <a href="catalog.html">Сливочное</a>
-                      </li>
-                      <li>
-                          <a href="#">Щербеты</a>
-                      </li>
-                      <li>
-                          <a href="#">Фруктовый лед</a>
-                      </li>
-                      <li>
-                          <a href="#">Мелорин</a>
-                      </li>
-                  </ul>
-                </label>
-              </li>
+          <nav>
+            <ul class="main-menu">
+                <li>
+                  <a class="main-menu-submenu" href="#">Каталог</a>
+                    <ul class="submenu">
+                        <li class="submenu-new-items">
+                            <a href="#">Новинки</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Сливочное</a>
+                        </li>
+                        <li>
+                            <a href="#">Щербеты</a>
+                        </li>
+                        <li>
+                            <a href="#">Фруктовый лед</a>
+                        </li>
+                        <li>
+                            <a href="#">Мелорин</a>
+                        </li>
+                    </ul>
+                </li>
 
-              <li>
-                  <a href="#">Доставка и оплата</a>
-              </li>
+                <li>
+                    <a href="#">Доставка и оплата</a>
+                </li>
 
-              <li>
-                  <a href="#">О Компании</a>
-              </li>
+                <li>
+                    <a href="#">О Компании</a>
+                </li>
 
-          </ul>
+            </ul>
+          </nav>
 
           <div class="login-block">
              <div class="login-menu-positioning">
               <div class="top-menu-search-btn-wrapper">
                   <a class="top-menu-btn search-btn menu-search-icon" href="#"></a>
-                  <!-- <div class="global-search-field"> -->
+                  <div class="global-search-field-wrapper">
                   <input class="top-menu-fields global-search-field" type="text" name="global-search-field" id="global-search-field" placeholder="Что ищем?" required>
-                  <!-- </div> -->
+                  </div>
               </div>
 
               <a class="top-menu-btn login-btn menu-login-icon" href="#">
@@ -143,29 +146,39 @@
                   <b class="header-contact-phone">8 812 450-25-25</b>
               </div>
           </div>
+
       </header>
 
-      <!-- <div class="main-slider-wrapper">
+      <div class="main-slider-wrapper">
           <div class="slide slide1">
-              <h2 class="slogan">Крем-брюле и пломбир<br>с малиновым джемом</h2>
+              <h2 class="slogan">Крем-брюле и пломбир с малиновым джемом</h2>
+              <a class="btn main-slider-btn" href="#">
+                <span>Давайте оба!</span>
+              </a>
           </div>
 
-          <div class="slide slide2 main-slider-hidden">
-              <h2 class="slogan">Шоколадный пломбир<br>и лимонный сорбет</h2>
+          <div class="slide slide2">
+              <h2 class="slogan">Шоколадный пломбир и лимонный сорбет</h2>
+              <a class="btn main-slider-btn" href="#">
+                <span>Давайте оба!</span>
+              </a>
           </div>
 
-          <div class="slide slide3 main-slider-hidden">
-              <h2 class="slogan">Пломбир с помадкой<br>и клубничный щербет</h2>
+          <div class="slide slide3">
+              <h2 class="slogan">Пломбир с помадкой и клубничный щербет</h2>
+              <a class="btn main-slider-btn" href="#">
+                <span>Давайте оба!</span>
+              </a>
           </div>
 
-      </div> -->
+          <div class="slider-btns">
+            <label for="slider-btn1"></label>
+            <label for="slider-btn2"></label>
+            <label for="slider-btn3"></label>
+          </div>
 
-  <div class="main-text-content-wrapper">
-     <div class="btn-main-positioning">
-        <a class="btn main-slider-btn" href="#">
-            <span>Давайте оба!</span>
-        </a>
-     </div>
+      </div>
+
       <main class="content-wrapper clearfix">
 
           <div class="announce-block-wrapper clearfix">
