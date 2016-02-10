@@ -88,21 +88,32 @@ grid index-page
   padding: 6px 13px 6px 13px;
   border-radius: 25px;
   font-size: 16px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #ffffff;
+  font-weight: bold;
   /* border-bottom: 1px solid #ffffff; */
 }
 
-.main-menu > li > a:hover {
-  /* padding: 9px 13px 11px 13px; */
+.menu-pseudo-hover {
+  position: absolute;
+  visibility: hidden;
+}
+
+.main-menu > li > a:hover,
+#menu-pseudo-hover:hover ~ .main-menu .main-menu-submenu {
   color: #333333;
-  /* border-color: #333333; */
   background-color: #f7f6f3;
   transition: 0.5s ease-in-out;
 }
 
+.main-menu .main-menu-submenu:hover {
+  text-decoration: none;
+}
+
 .main-menu > li:hover .submenu {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  /* display: block; */
 }
 
 .main-menu .submenu {
@@ -111,24 +122,32 @@ grid index-page
   left: 156px;
   padding: 0;
   margin-top: 10px;
-  display: none;
+  /* display: none; */
   list-style: none;
   text-align: left;
   font-size: 14px;
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0 16px 25px 5px rgba(0, 0, 0, 0.3);
-  transition: 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s ease-out,
+              opacity 0.5s ease-in-out;
 }
 
-.submenu > li:hover ~ .main-menu > li {
-  color: red;
-}
-
-.submenu > li {
+.submenu > li > a {
   margin: 0 5px;
 }
 
+.submenu > li:hover:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.submenu > li:hover:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 .submenu > li:hover {
   background-color: #fbded7;
 }
@@ -140,7 +159,12 @@ grid index-page
   text-decoration: none;
 }
 
-.submenu > .submenu-new-items {
+.submenu > .submenu-new-items:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 33px;
+  width: 128px;
   border-bottom: 1px solid #d1d0ce;
 }
 
@@ -202,15 +226,15 @@ grid index-page
   width: 21px;
   left: 16px;
   top: 6px;
-  background-position: -85px -110px;
+  background-position: -158px -19px;
 }
 
-.menu-login-icon:hover.menu-login-icon::before {
+.menu-login-icon:hover::before {
   height: 19px;
   width: 21px;
   left: 16px;
   top: 6px;
-  background-position: -64px -110px;
+  background-position: -158px -0px;
 }
 
 .menu-basket-icon {
@@ -222,15 +246,23 @@ grid index-page
   top: 5px;
   height: 20px;
   width: 21px;
-  background-position: -131px -81px;
+  background-position: -131px -85px;
 }
 
-.menu-basket-icon:hover.menu-basket-icon::before {
+.menu-basket-icon:hover::before {
   left: 14px;
   top: 5px;
   height: 20px;
   width: 21px;
-  background-position: -110px -81px;
+  background-position: -133px -62px;
+}
+
+.menu-basket-icon:active::before {
+  left: 14px;
+  top: 5px;
+  height: 20px;
+  width: 21px;
+  background-position: -110px -85px;
 }
 
 .menu-search-icon {
@@ -240,19 +272,24 @@ grid index-page
 .menu-search-icon::before {
   height: 17px;
   width: 17px;
-  background-position: -141px -110px;
+  top: 7px;
+  left: 7px;
+  background-position: -158px -72px;
 }
 
-.menu-search-icon:hover.menu-search-icon::before {
+.menu-search-icon:hover::before {
   height: 17px;
   width: 17px;
-  background-position: -124px -110px;
+  top: 7px;
+  left: 7px;
+  background-position: -158px -55px;
 }
 
 .menu-search-icon:hover,
 .menu-login-icon:hover,
 .menu-basket-icon:hover {
   background-color: #f8f7f4;
+  transition: 0.5s ease-in-out;
 }
 
 .search-btn:hover + .global-search-field {
@@ -650,7 +687,7 @@ grid index-page
   float: left;
   margin-right: 2.17%; /* 26px */
   font-size: 16px;
-  background-color: rgba(217, 109, 198, 0.5);
+  /* background-color: rgba(217, 109, 198, 0.5); */
 }
 
 .footer-item:last-child {
@@ -967,21 +1004,25 @@ grid form-filter   {
 .social-net-link {
   display: inline-block;
   margin-left: -4px;
-  margin-right: 12px;
+  margin-right: 15px;
 }
 
 .social-net-link::before {
   content: "";
+  height: 32px;
+  width: 32px;
   display: inline-block;
   background: url(../img/sprite.png) no-repeat 0 0;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 0 2px transparent;
+/*   border: 3px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 2px transparent; */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+
 }
 
 .social-net-link:hover::before {
-  border: 3px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+  /* border: 3px solid rgba(255, 255, 255, 0.7); */
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 .twitter-icon::before {
@@ -991,29 +1032,38 @@ grid form-filter   {
 }
 
 .twitter-icon:active::before {
-  height: 32px;
-  width: 33px;
   background-position: -188px -126px;
-  border: 5px solid rgba(255, 255, 255, 0.7);
-  box-shadow: inset  0 3px 0 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.7); */
+  /* border: 5px solid rgba(255, 255, 255, 0.7); */
+  box-shadow: inset  0 3px 1px 0 rgba(0, 0, 0, 0.2),
+              0 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 .insta-icon::before {
-  height: 32px;
-  width: 32px;
   background-position: -189px -46px;
 }
 
+.insta-icon:active::before {
+  box-shadow: inset  0 3px 1px 0 rgba(0, 0, 0, 0.2),
+              0 0 0 4px rgba(255, 255, 255, 0.7);
+}
+
 .vk-icon::before {
-  height: 32px;
-  width: 32px;
   background-position: -189px -86px;
 }
 
+.vk-icon:active::before {
+  box-shadow: inset  0 3px 1px 0 rgba(0, 0, 0, 0.2),
+              0 0 0 4px rgba(255, 255, 255, 0.7);
+}
+
 .fb-icon::before {
-  height: 32px;
-  width: 32px;
   background-position: -189px -6px;
+}
+
+.fb-icon:active::before {
+  box-shadow: inset  0 3px 1px 0 rgba(0, 0, 0, 0.2),
+              0 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 .menu-active-item > a {
@@ -1026,3 +1076,13 @@ grid form-filter   {
 .body-slider-wrapper {
   background: url(../img/slider-main-pic1.png) top center no-repeat;
 }
+
+.small-heart-icon::before {
+  content: "";
+  height: 13px;
+  width: 15px;
+  display: inline-block;
+  background: url(../img/sprite.png) no-repeat 0 0;
+  background-position: -158px -89px;
+}
+
