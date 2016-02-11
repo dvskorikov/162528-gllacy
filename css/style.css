@@ -463,6 +463,7 @@ grid index-page
 }
 
 .announce-block {
+  position: relative;
   float: left;
   min-height: 229px;
   min-width: 419px;
@@ -952,6 +953,12 @@ grid form-filter   {
   background-position: -0px -0px;
 }
 
+.try-to-buy-bg:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 20px;
+  background-color: rgba(248, 247, 244, 0.3);
+}
+
 .contact-map {
   background: #dee0d0 url(../img/map-block-bg-1200.jpg) center 0px no-repeat;
 }
@@ -966,6 +973,7 @@ grid form-filter   {
 .announce-description {
   font-size: 18px;
   margin-left: 19px;
+  margin-bottom: 50px;
 }
 
 .price {
@@ -1113,3 +1121,10 @@ input[name="slider-btns"] {
   display: none;
 }
 
+
+.announce-block-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 23px;
+  margin: 0;
+}
