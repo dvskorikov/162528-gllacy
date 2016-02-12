@@ -54,8 +54,8 @@
              <div class="login-menu-positioning">
               <div class="top-menu-search-btn-wrapper">
                   <a class="top-menu-btn search-btn menu-search-icon" href="#"></a>
-                  <div class="global-search-field-wrapper">
-                  <input class="top-menu-fields global-search-field" type="text" name="global-search-field" id="global-search-field" placeholder="Что ищем?" required>
+                  <div class="global-search-field">
+                    <input class="global-search-field1" type="text" name="global-search-field" id="global-search-field" placeholder="Что ищем?" required>
                   </div>
               </div>
 
@@ -64,7 +64,7 @@
               </a>
 
               <form class="top-menu-login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="top-menu-fields login-form-email" type="email" name="login-form-email" placeholder="Электронная почта" required>
+                  <input class="top-menu-fields top-menu-fields-pos login-form-email" type="email" name="login-form-email" placeholder="Электронная почта" required>
 
                   <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" placeholder="Пароль" required>
 
@@ -72,7 +72,7 @@
                       Войти
                   </button>
 
-                  <a class="top-menu-login-form-link" href="#">Забыли пароль?</a>
+                  <a class="top-menu-login-form-link top-menu-login-form-link-pos" href="#">Забыли пароль?</a>
 
                   <a class="top-menu-login-form-link" href="#">Новая регистрация</a>
               </form>
@@ -82,7 +82,7 @@
                       Пусто
                   </a>
 
-                  <div class="top-menu-backet-show">
+                  <div class="top-menu-backet">
                     <table class="top-menu-backet-table">
                         <tr>
                             <td class="backet-table-cell backet-table-cell-del-btn">
@@ -210,7 +210,7 @@
           </div>
 
           <div class="quick-order-block-wrapper clearfix">
-              <div class="quick-order-item hit-picture quick-order-item-frst-pg try-to-buy-bg">
+              <div class="quick-order-item try-to-buy-bg quick-order-item-frst-pg">
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic1.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">310</span>
@@ -317,7 +317,7 @@
                           Честно =)
                       </p>
                       <input class="get-email-field" type="email" name="user-email" placeholder="Электронная почта" required>
-                      <button class="btn" type="submit" name="submit-email">Отправить</button>
+                      <button class="btn get-email-btn" type="submit" name="submit-email">Отправить</button>
                   </form>
                  </div>
               </div>
@@ -325,14 +325,15 @@
 
           <div class="map-wrapper contact-map">
               <!-- <img class="contact-map" src="img/map-block-bg-900.jpg" width="860" height="430" alt="как нас найти?"> -->
-              <div class="feedback-form">
-                  Адрес главного офиса и<br>офлайн магазина:<br>
-                  <b class="contact-addr">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
-                  Для заказов по телефону:<br>
-                  <b class="contact-addr">8 812 450-25-25</b><br>
-                  (с 10 до 20 ежедневно)
-
-                  <a class="btn feedback-btn" href="#" id="send-feedback">Форма обратной связи</a>
+              <div class="feedback-form-map-block">
+                  <span>
+                    Адрес главного офиса и<br>офлайн магазина:<br>
+                    <b class="contact-addr">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
+                    Для заказов по телефону:<br>
+                    <b class="contact-addr">8 812 450-25-25</b>
+                    (с 10 до 20 ежедневно)
+                  </span>
+                  <a class="btn feedback-btn" href="#" id="send-feedback"><span>Форма обратной связи</span></a>
               </div>
           </div>
 
@@ -354,6 +355,7 @@
           </div>
 
           <div class="footer-quick-links-block">
+             <div class="footer-quick-links-left">
               <a class="footer-quick-links small-heart-icon" href="#">
                   <b>Для поставщиков</b>
               </a>
@@ -361,7 +363,9 @@
               <a class="footer-quick-links" href="#">
                   О производстве
               </a>
+             </div>
 
+             <div>
               <a class="footer-quick-links" href="#">
                   Наши документы
               </a>
@@ -369,6 +373,7 @@
               <a class="footer-quick-links" href="#">
                   Экологические стандарты
               </a>
+             </div>
           </div>
 
           <div class="footer-item footer-made-by-block">
@@ -382,9 +387,9 @@
     </div>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
-          <a class="feedback-form-close" href="#" id="form-close">
+    <!--       <a class="feedback-form-close" href="#" id="form-close">
               <img src="img/form-close-icon.png" width="18" height="17" alt="закрыть форму">
-          </a>
+          </a> -->
 
           <h2 class="feedback-form-header">
               Мы обязательно вам ответим!
@@ -394,13 +399,14 @@
 
           <input class="feedback-form-email form-fields-style" type="email" name="form-email" placeholder="Ваша почта для ответа?" required>
 
-          <textarea class="feedback-form-message form-fields-style" name="form-message" rows="3" placeholder="Напишите что-нибудь..." required>
+          <textarea class="feedback-form-message form-fields-style form-fields-style1" name="form-message" rows="3" placeholder="Напишите что-нибудь..." required>
 
           </textarea>
           <button class="btn feedback-form-btn" type="submit" name="feedback-form-send">
               Отправить
           </button>
       </form>
+      <div class="overlay"></div>
     </div>
   </body>
 </html>
