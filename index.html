@@ -57,7 +57,7 @@
                   <div class="global-search-field">
                     <input class="global-search-field1" type="text" name="global-search-field" id="global-search-field" required>
                     <div class="placeholder-label-box">
-                      <label class="label-placeholder  label-search-pos" for="ph">Что ищем?</label>
+                      <label class="label-placeholder label-search-pos">Что ищем?</label>
                     </div>
                   </div>
               </div>
@@ -67,9 +67,15 @@
               </a>
 
               <form class="top-menu-login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="top-menu-fields top-menu-fields-pos login-form-email" type="email" name="login-form-email" placeholder="Электронная почта" required>
+                  <input class="top-menu-fields top-menu-fields-pos login-form-email" type="text" name="login-form-email" required>
+                  <div class="placeholder-label-box1 top-menu-ph-pos">
+                    <label class="label-placeholder">Электронная почта</label>
+                  </div>
 
-                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" placeholder="Пароль" required>
+                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" required>
+                  <div class="placeholder-label-box top-menu-pass-pos">
+                    <label class="label-placeholder">Пароль</label>
+                  </div>
 
                   <button class="btn login-form-btn" type="submit" name="login-form-btn">
                       Войти
@@ -319,9 +325,9 @@
                           Обещаем не спамить и не слать всякой не нужной ерунды.
                           Честно =)
                       </p>
-                      <input class="get-email-field" type="email" name="user-email" required>
+                      <input class="get-email-field" type="text" name="user-email" required>
                       <div class="placeholder-label-box">
-                        <label class="label-placeholder label-email-pos" for="ph">Электронная почта</label>
+                        <label class="label-placeholder label-email-pos">Электронная почта</label>
                       </div>
                       <button class="btn get-email-btn" type="submit" name="submit-email">Отправить</button>
                   </form>

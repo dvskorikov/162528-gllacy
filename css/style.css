@@ -1497,6 +1497,11 @@ input[type="email"]:focus {
   width: 200px;
 }
 
+.placeholder-label-box1 {
+  position: absolute;
+  width: 200px;
+}
+
 .label-placeholder {
   position: absolute;
   top: -30px;
@@ -1510,24 +1515,45 @@ input[type="email"]:focus {
   left: 31px;
 }
 
-input:focus ~ .placeholder-label-box label {
+input[name="user-email"]:focus ~ .placeholder-label-box label,
+input[name="global-search-field"]:focus ~ .placeholder-label-box label,
+input[name="login-form-passwd"]:focus ~ .placeholder-label-box label,
+input[name="login-form-email"]:focus ~ .placeholder-label-box1 label {
   font-size: 11px;
   color: #5b9ddf;
-  transform: translateY(-20px);
+  transform: translateY(-25px);
 }
 
-input:valid:not(:focus) ~ .placeholder-label-box label {
-  display: none;
+input[name="login-form-passwd"]:valid:not(:focus) ~ .placeholder-label-box label,
+input[name="global-search-field"]:valid:not(:focus) ~ .placeholder-label-box label,
+input[name="user-email"]:valid:not(:focus) ~ .placeholder-label-box label,
+input[name="login-form-email"]:valid:not(:focus) ~ .placeholder-label-box1 label {
+  font-size: 11px;
+  color: #9a9a9a;
+  transform: translateY(-25px);
 }
 
-input:focus ~ .placeholder-label-box label[for="ph"] {
-  transform: translateY(-30px);
-}
+/* input:focus ~ .placeholder-label-box label {
+  transform: translateY(-25px);
+} */
 
 .label-search-pos {
   left: 24px;
 }
 
+.top-menu-ph-pos {
+  top: 58px;
+  left: 32px;
+  font-size: 14px;
+}
+
+.top-menu-pass-pos {
+  top: 106px;
+  left: 32px;
+  font-size: 14px;
+}
+/*
 input:focus ~ .placeholder-label-box label.label-search-pos {
   transform: translateY(-25px);
 }
+*/
