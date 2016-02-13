@@ -1078,12 +1078,14 @@ grid form-filter   {
 }
 
 .news-block-background {
+  position: relative;
   display: inline-block;
   width: 97.85%;
   min-width: 409px;
   min-height: 208px;
   margin: 1.07% 0;
   border-radius: 15px;
+  padding-right: 1px;
   font-size: 16px;
   text-align: justify;
   background-color: #f8f7f4;
@@ -1401,13 +1403,14 @@ input[name="slider-btns"] {
 }
 
 .get-email-field {
-  float: left;
   height: 42px;
 /*  min-width: 30%;*/
-max-width: 100%; /*  348px; */
-  min-width: 40%; /*229px; */
+  width: 58%; /*  348px; */
+/*  min-width: 40%; 229px; */
   margin-left: 20px;
+  margin-bottom: 33px;
   padding: 0 9px;
+  box-sizing: border-box;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
@@ -1433,9 +1436,12 @@ input[type="email"]:focus {
 }
 
 .get-email-btn {
-  margin-left: 8px;
+  position: absolute;
+  right: 19px;
+  bottom: 34px;
+  /* margin-left: 8px; */
   width: 128px;
-  height: 42px;
+  height: 43px;
   font-size: 17px;
   font-weight: bold;
 }
@@ -1484,4 +1490,44 @@ input[type="email"]:focus {
   margin-right: 25px;
   margin-top: 16px;
   font-size: 15px;
+}
+
+.placeholder-label-box {
+  position: absolute;
+  width: 200px;
+}
+
+.label-placeholder {
+  position: absolute;
+  top: -30px;
+  pointer-events: none;
+  color: #9b9b9b;
+  transition: 0.2s;
+}
+
+.label-email-pos {
+  top: -67px;
+  left: 31px;
+}
+
+input:focus ~ .placeholder-label-box label {
+  font-size: 11px;
+  color: #5b9ddf;
+  transform: translateY(-20px);
+}
+
+input:valid:not(:focus) ~ .placeholder-label-box label {
+  display: none;
+}
+
+input:focus ~ .placeholder-label-box label[for="ph"] {
+  transform: translateY(-30px);
+}
+
+.label-search-pos {
+  left: 24px;
+}
+
+input:focus ~ .placeholder-label-box label.label-search-pos {
+  transform: translateY(-25px);
 }
