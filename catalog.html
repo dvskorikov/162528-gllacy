@@ -7,7 +7,9 @@
         <link href="css/style.css" rel="stylesheet">
         <title>HTML Academy: Глейси - Каталог</title>
     </head>
-    <body>
+    <body class="secondary-page-bg">
+     <div class="body-slider-wrapper">
+       <div class="main-content-wrapper">
       <header class="header-wrapper clearfix">
           <a class="main-menu-logo" href="index.html"><img class="main-logo" src="img/logo.png" width="154" height="64" alt="логотип"></a>
 
@@ -42,36 +44,47 @@
           </ul>
 
           <div class="login-block">
+             <div class="login-menu-positioning">
               <div class="top-menu-search-btn-wrapper">
-                  <a class="top-menu-btn search-btn search-icon" href="#"></a>
-
-                  <input class="top-menu-fields global-search-field" type="text" name="global-search-field" id="global-search-field" placeholder="Что ищем?" required>
+                  <a class="top-menu-btn search-btn menu-search-icon" href="#"></a>
+                  <div class="global-search-field">
+                    <input class="global-search-field1" type="text" name="global-search-field" id="global-search-field" required>
+                    <div class="placeholder-label-box">
+                      <label class="label-placeholder label-search-pos">Что ищем?</label>
+                    </div>
+                </div>
               </div>
 
-              <a class="top-menu-btn login-btn login-icon" href="#">
+              <a class="top-menu-btn login-btn menu-login-icon" href="#">
                   Вход
               </a>
 
               <form class="top-menu-login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="top-menu-fields login-form-email" type="email" name="login-form-email" placeholder="Электронная почта" required>
+                  <input class="top-menu-fields top-menu-fields-pos login-form-email" type="text" name="login-form-email" required>
+                  <div class="placeholder-label-box1 top-menu-ph-pos">
+                    <label class="label-placeholder">Электронная почта</label>
+                  </div>
 
-                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" placeholder="Пароль" required>
+                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" required>
+                  <div class="placeholder-label-box top-menu-pass-pos">
+                    <label class="label-placeholder">Пароль</label>
+                  </div>
 
                   <button class="btn login-form-btn" type="submit" name="login-form-btn">
                       Войти
                   </button>
 
-                  <a class="top-menu-login-form-link" href="#">Забыли пароль?</a>
+                  <a class="top-menu-login-form-link  top-menu-login-form-link-pos" href="#">Забыли пароль?</a>
 
                   <a class="top-menu-login-form-link" href="#">Новая регистрация</a>
               </form>
 
-              <div class="top-menu-backet-wrapper">
-                  <a class="top-menu-btn backet-btn backet-icon" href="#">
+              <div class="top-menu-basket-wrapper">
+                  <a class="top-menu-btn backet-btn menu-basket-icon" href="#">
                       Пусто
                   </a>
 
-                <div class="top-menu-backet-show">
+                <div class="top-menu-backet">
                     <table class="top-menu-backet-table">
                         <tr>
                             <td class="backet-table-cell backet-table-cell-del-btn">
@@ -130,7 +143,7 @@
                     <a class="btn top-menu-backet-make-order-btn" href="#" id="top-menu-make-order-btn">Оформить заказ</a>
                 </div>
               </div>
-
+            </div>
 
               <div class="working-time">
                   с 10 до 20, ежедневно<br>
@@ -377,44 +390,23 @@
           </div>
 
           <div class="paginator">
-              <ul class="paginator-pages">
-                  <li class="paginator-to-left">
-                      <a href="#">&#60;</a>
-                  </li>
-                  <li class="paginator-selected-page">
-                      <a href="#">1</a>
-                  </li>
-
-                  <li>
-                      <a href="#">2</a>
-                  </li>
-
-                  <li>
-                      <a href="#">3</a>
-                  </li>
-
-                  <li>
-                      <a href="#">4</a>
-                  </li>
-
-                  <li>
-                      <a href="#">5</a>
-                  </li>
-                  <li class="paginator-to-right">
-                      <a href="#">&#62;</a>
-                  </li>
-
-              </ul>
+            <a class="paginator-to-left paginator-no-anymore-pages" href="#"></a>
+            <a class="paginator-current-page" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a class="paginator-to-right" href="#"></a>
           </div>
+
       </main>
 
       <footer class="footer-wrapper clearfix">
-          <div class="footer-item footer-social-net-block">
+          <div class="footer-item footer-social-net-block clearfix">
               <a class="social-net-link twitter-icon" href="#">
               </a>
 
               <a class="social-net-link insta-icon" href="#">
-                  Insta
               </a>
 
               <a class="social-net-link fb-icon" href="#">
@@ -425,6 +417,7 @@
           </div>
 
           <div class="footer-quick-links-block">
+            <div class="footer-quick-links-left">
               <a class="footer-quick-links small-heart-icon" href="#">
                   <b>Для поставщиков</b>
               </a>
@@ -432,7 +425,9 @@
               <a class="footer-quick-links" href="#">
                   О производстве
               </a>
+            </div>
 
+            <div>
               <a class="footer-quick-links" href="#">
                   Наши документы
               </a>
@@ -440,6 +435,7 @@
               <a class="footer-quick-links" href="#">
                   Экологические стандарты
               </a>
+            </div>
           </div>
 
           <div class="footer-item footer-made-by-block">
@@ -450,6 +446,7 @@
           </div>
 
       </footer>
-
+      </div>
+     </div>
     </body>
 </html>
