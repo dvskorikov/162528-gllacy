@@ -91,9 +91,10 @@ h3 {
   position: relative;
   width: 100%;
   margin-top: 10px;
+  margin-bottom: -22px;
   padding: 18px 2.3% 0 2.3%;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 4;
   text-align: right;
   /*  min-width: 900px;
   max-width: 1200px;
@@ -141,6 +142,11 @@ h3 {
   background-color: #f7f6f3;
   text-decoration: none;
   transition: 0.5s ease-in-out;
+}
+
+.menu-active-item {
+  background-color: #d07058;
+  text-decoration: none;
 }
 
 /* .main-menu .main-menu-submenu:hover {
@@ -904,6 +910,8 @@ grid catalog-page
 }
 
 .breadcrumbs-wrapper {
+  position: relative;
+  z-index: 3;
   width: 100%;
   padding: 0 2.2%;
   margin-bottom: 25px;
@@ -914,25 +922,57 @@ grid catalog-page
 .breadcrumbs-list {
   padding: 0;
   margin: 0;
+  margin-bottom: -3px;
+  font-size: 0;
 }
 
 .breadcrumbs-list > li {
-  float: left;
-  width: 70px;
+  display: inline-block;
+/*  width: 70px;*/
   padding-bottom: 10px;
+  font-size: 14px;
   list-style: none;
-  background-color: rgba(217, 109, 198, 0.5);
+}
+
+.breadcrumbs-list > li::after {
+  display: inline-block;
+  content: "»";
+  margin: 0 7px;
+  font-weight: 14px;
+  color: white;
+}
+
+.breadcrumbs-list > li:last-child::after {
+  content: "";
 }
 
 .breadcrumbs-content-header {
   float: left;
   width: 100%;
-  line-height: normal;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 30px;
+  color: white;
   background-color: rgba(217, 109, 198, 0.7);
 }
 
 .breadcrumbs-list {
   width: 100%;
+}
+
+.breadcrumbs-link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.breadcrumbs-link:hover {
+  color: #ffbc9e;
+  border-bottom: 1px solid #ffbc9e;
+}
+
+.breadcrumbs-link-active {
+  color: white;
 }
 
 /***************************
@@ -991,7 +1031,7 @@ grid form-filter   {
 
 .paginator {
   float: right;
-  margin: 40px 0 39px 0;
+  margin: 40px 17px 39px 0;
   font-size: 0;
   /* background-color: rgba(1, 254, 1, 0.5); */
 }
@@ -999,26 +1039,20 @@ grid form-filter   {
 .paginator a {
   position: relative;
   display: inline-block;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   margin-right: 5px;
 /*  padding: 0 10px;*/
 
   font-size: 16px;
   color: white;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 25px;
   text-decoration: none;
   vertical-align: middle;
   text-align: center;
   background-color: none;
   border-radius: 50%;
-
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.paginator a:last-child:not(:empty) {
-    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .paginator a:hover {
@@ -1033,16 +1067,21 @@ grid form-filter   {
 .paginator-to-right::after,
 .paginator-to-left::before {
   content: "";
-/*  margin-top: 25px;*/
+  position: absolute;
+  top: 5px;
+  left: 10px;
+
   height: 14px;
   width: 9px;
-  padding: 0 5px;
-  line-height: 33px;
   background: url(../img/sprite-manag-elements.png) -0px -64px no-repeat;
 }
 
 .paginator-to-left::before {
   transform: rotate(180deg);
+}
+
+.paginator-no-more-pages {
+  opacity:0.3;
 }
 
 .item-descript {
