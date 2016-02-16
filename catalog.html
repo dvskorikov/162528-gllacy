@@ -167,7 +167,7 @@
 
           <form class="filter-form-wrapper filter-form clearfix" action="https://echo.htmlacademy.ru" method="get">
               <label class="filter-form-item filter-form-sort-criteria">
-                <span class="filter-form-lable">Сортировка</span>
+                <span class="filter-form-lable">Сортировка:</span>
                   <select class="filter-form-select-list" name="filter-form-select-list">
                       <option value="filter-popular-first">по популярности</option>
                       <option value="filter-cheap-first">сначала недорогие</option>
@@ -178,62 +178,63 @@
 
               <label class="filter-form-item filter-form-price-range">
                 <span class="filter-form-lable">Цена: 100 руб. – 500 руб.</span>
-                  <img class="filter-form-price-range-pict" src="img/range-prices-img.png" width="220" height="37" alt="диапазон цен">
+<!--                  <img class="filter-form-price-range-pict" src="img/range-prices-img.png" width="220" height="37" alt="диапазон цен">-->
+                 <div class="filter-form-price-range-pict"></div>
               </label>
 
               <div class="filter-form-item filter-form-fat-level">
                 <span class="filter-form-lable">Жирность:</span>
 
                 <div class="filter-form-btn-group-wrapper">
-                  <label class="filter-form-fat-level-radio">
-                      <input class="filter-form-fat-level-radio" type="radio" name="filter-form-radio-btns" value="0">
+                  <input class="filter-form-fat-level-radio" id="radio1" type="radio" name="filter-form-radio-btns" value="zero">
+                  <label class="filter-form-fat-level-lbl-radio" for="radio1">
                       0%
                   </label>
 
-                  <label class="filter-form-fat-level-radio">
-                      <input class="filter-form-fat-level-radio" type="radio" name="filter-form-radio-btns" value="less10" checked>
+                  <input class="filter-form-fat-level-radio" id="radio2" type="radio" name="filter-form-radio-btns" value="less10" checked>
+                  <label class="filter-form-fat-level-lbl-radio" for="radio2">
                       до 10%
                   </label>
 
-                  <label class="filter-form-fat-level-radio">
-                      <input class="filter-form-fat-level-radio" type="radio" name="filter-form-radio-btns" value="less30">
+                  <input class="filter-form-fat-level-radio" id="radio3" type="radio" name="filter-form-radio-btns" value="less30">
+                  <label class="filter-form-fat-level-lbl-radio" for="radio3">
                       до 30%
                   </label>
 
-                  <label class="filter-form-fat-level-radio">
-                      <input class="filter-form-fat-level-radio" type="radio" name="filter-form-radio-btns" value="more30">
+                  <input class="filter-form-fat-level-radio" id="radio4" type="radio" name="filter-form-radio-btns" value="over30">
+                  <label class="filter-form-fat-level-lbl-radio" for="radio4">
                       выше 30%
                   </label>
                 </div>
 
               </div>
 
-              <div class="filter-form-item filter-form-">
+              <div class="filter-form-item filter-form-chbox-wrapper">
                 <span class="filter-form-lable">Наполнители:</span>
 
                 <div class="filter-form-btn-group-wrapper">
-                  <label class="filter-form-filler">
-                      <input class="filter-form-filler-checkbox" type="checkbox" name="filter-form-checkbox" value="chocolate" checked>
+                  <input class="filter-form-filler-checkbox" id="chbox1" type="checkbox" name="filter-form-checkbox" value="chocolate" checked>
+                  <label class="filter-form-filler-lbl" for="chbox1">
                       шоколадные
                   </label>
 
-                  <label class="filter-form-filler">
-                      <input class="filter-form-filler-checkbox" type="checkbox" name="filter-form-checkbox" value="shugar-added" checked>
+                  <input class="filter-form-filler-checkbox" id="chbox2" type="checkbox" name="filter-form-checkbox" value="shugar-added" checked>
+                  <label class="filter-form-filler-lbl" for="chbox2">
                       сахарные присыпки
                   </label>
 
-                  <label class="filter-form-filler">
-                      <input class="filter-form-filler-checkbox" type="checkbox" name="filter-form-checkbox" value="fruits">
+                  <input class="filter-form-filler-checkbox" id="chbox3" type="checkbox" name="filter-form-checkbox" value="fruits">
+                  <label class="filter-form-filler-lbl" for="chbox3">
                       фрукты
                   </label>
 
-                  <label class="filter-form-filler">
-                      <input class="filter-form-filler-checkbox" type="checkbox" name="filter-form-checkbox" value="syrups">
+                  <input class="filter-form-filler-checkbox" id="chbox4" type="checkbox" name="filter-form-checkbox" value="syrups">
+                  <label class="filter-form-filler-lbl" for="chbox4">
                       сиропы
                   </label>
 
-                  <label class="filter-form-filler">
-                      <input class="filter-form-filler-checkbox" type="checkbox" name="filter-form-checkbox" value="jams">
+                  <input class="filter-form-filler-checkbox" id="chbox5" type="checkbox" name="filter-form-checkbox" value="jams">
+                  <label class="filter-form-filler-lbl" for="chbox5">
                       джемы
                   </label>
                 </div>
