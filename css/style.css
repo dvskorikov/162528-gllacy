@@ -674,7 +674,7 @@ h3 {
   font-size: 15px;
 }
 
-.quick-order-item-zind {
+.quick-order-item:hover {
   z-index: 9;
 }
 
@@ -863,7 +863,7 @@ h3 {
   font-size: 0;
 }
 
-.footer-wrapper::before {
+.footer-wrapper-decor::before {
   content: "";
   position: absolute;
   left: 2.3%;
@@ -932,6 +932,16 @@ h3 {
 
 .main-slider-btn {
  border-radius: 40px;
+}
+
+.main-slider-btn:active {
+  background: linear-gradient(to bottom, #d74632, #e1613e);
+  box-shadow:  0 2px 2px 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.main-slider-btn:active span,
+.main-slider-btn:hover span {
+  text-shadow: 2px 2px 10px rgba(160, 32, 11, 1);
 }
 
 .item-border-radius {
@@ -1418,10 +1428,10 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
   background-color: #f8f7f4;
 }
 
-.ice-cream-pict.hit-picture::before {
+.hit-picture::after {
   content: "";
   position: absolute;
-  z-index: 6;
+  z-index: 5;
   top: 1px;
   left: 1px;
   height: 61px;
@@ -1643,6 +1653,7 @@ input[name="slider-btns"] {
   background-color: #f8f7f4;
   border-radius: 10px;
   visibility: hidden;
+  box-sizing: border-box;
   opacity: 0;
   transition: visibility 0.5s ease-out,
               opacity 0.5s ease-in-out;
@@ -1670,11 +1681,14 @@ input[name="slider-btns"] {
   top: 17px;
   left: 93.5%;
   display: block;
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
+  width: 18px;
+  height: 17px;
+  background-image: url(../img/sprite.png);
+  background-position: -158px -38px;
+/*  background-color: transparent;*/
 }
 
+/*
 .feedback-form-close::before,
 .feedback-form-close::after {
   position: absolute;
@@ -1685,16 +1699,13 @@ input[name="slider-btns"] {
   width: 22px;
   height: 1px;
   background-color: black;
-  transform-origin: 0 0;
 }
 
 .feedback-form-close::before {
-  right: -5px;
   transform: rotate(45deg);
 }
 
 .feedback-form-close::after {
-  right: -21px;
   transform: rotate(135deg);
 }
 
@@ -1702,6 +1713,7 @@ input[name="slider-btns"] {
 .feedback-form-close:active::after {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
+*/
 
 .feedback-form-show {
 /*  display: block;*/
@@ -1727,7 +1739,7 @@ input[name="slider-btns"] {
 }
 
 .form-fields-style1 {
-  width: 410px;
+  width: 397px;
   height: 153px;
 }
 

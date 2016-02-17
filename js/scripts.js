@@ -5,6 +5,8 @@ var feedback_form_close = document.querySelector(".feedback-form-close");
 var item_hover = document.querySelector(".quick-order-selected-item");
 
 
+
+
 feedback_link.addEventListener("click", function(event) {
   event.preventDefault();
   overlay.classList.add("feedback-form-show");
@@ -17,6 +19,12 @@ feedback_form_close.addEventListener("click", function(event) {
   feedback.classList.remove("feedback-form-show");
 });
 
-item_hover.addEventListener("hover", function(event) {
+item_hover.onmouseover = function(event) {
+  event.preventDefault();
   item_hover.classList.add("quick-order-item-zind");
-});
+}
+
+item_hover.onmouseout = function(event) {
+  event.preventDefault();
+  item_hover.classList.remove("quick-order-item-zind");
+}
