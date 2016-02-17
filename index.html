@@ -219,7 +219,7 @@
           </div>
 
           <div class="quick-order-block-wrapper clearfix">
-              <div class="quick-order-item hit-picture quick-order-item-frst-pg quick-order-selected-item">
+              <div class="quick-order-item hit-picture quick-order-item-frst-pg">
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic1.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">310</span>
@@ -231,7 +231,7 @@
                   <a class="btn quick-order-item-btn" href="#">Быстрый просмотр</a>
               </div>
 
-              <div class="quick-order-item hit-picture quick-order-item-frst-pg quick-order-selected-item">
+              <div class="quick-order-item hit-picture quick-order-item-frst-pg">
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic2.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">380</span>
@@ -243,7 +243,7 @@
                   <a class="btn quick-order-item-btn" href="#">Быстрый просмотр</a>
               </div>
 
-              <div class="quick-order-item hit-picture quick-order-item-frst-pg quick-order-selected-item">
+              <div class="quick-order-item hit-picture quick-order-item-frst-pg">
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic3.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">355</span>
@@ -255,7 +255,7 @@
                   <a class="btn quick-order-item-btn" href="#">Быстрый просмотр</a>
               </div>
 
-              <div class="quick-order-item hit-picture quick-order-item-frst-pg quick-order-selected-item">
+              <div class="quick-order-item hit-picture quick-order-item-frst-pg">
                   <img class="ice-cream-pict" src="img/ice-cream-item-pic4.png" width="267" height="267" alt="картинка мороженки">
                   <div class="price">
                       <span class="price-amount">415</span>
@@ -325,9 +325,11 @@
                           Обещаем не спамить и не слать всякой не нужной ерунды.
                           Честно =)
                       </p>
-                      <input class="get-email-field" type="text" name="user-email" required>
-                      <div class="placeholder-label-box">
-                        <label class="label-placeholder label-email-pos">Электронная почта</label>
+                      <div class="get-email-field-wrapper">
+                        <input class="get-email-field" type="text" name="user-email" required>
+                        <div class="placeholder-label-box">
+                          <label class="label-placeholder label-email-pos">Электронная почта</label>
+                        </div>
                       </div>
                       <button class="btn get-email-btn" type="submit" name="submit-email">Отправить</button>
                   </form>
@@ -335,23 +337,25 @@
               </div>
           </div>
 
-          <div class="map-wrapper contact-map">
-              <!-- <img class="contact-map" src="img/map-block-bg-900.jpg" width="860" height="430" alt="как нас найти?"> -->
-              <div id="contact-map"></div>
-              <div class="feedback-form-map-block">
-                  <span>
-                    Адрес главного офиса и<br>офлайн магазина:<br>
-                    <b class="contact-addr">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
-                    Для заказов по телефону:<br>
-                    <b class="contact-addr">8 812 450-25-25</b>
-                    (с 10 до 20 ежедневно)
-                  </span>
-                  <a class="btn feedback-btn" href="#" id="send-feedback"><span>Форма обратной связи</span></a>
-              </div>
-          </div>
-
       </main>
+    </div>
 
+    <div class="map-wrapper contact-map">
+        <!-- <img class="contact-map" src="img/map-block-bg-900.jpg" width="860" height="430" alt="как нас найти?"> -->
+        <div id="contact-map"></div>
+        <div class="feedback-form-map-block">
+            <span>
+              Адрес главного офиса и<br>офлайн магазина:<br>
+              <b class="contact-addr">ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
+              Для заказов по телефону:<br>
+              <b class="contact-addr">8 812 450-25-25</b>
+              (с 10 до 20 ежедневно)
+            </span>
+            <a class="btn feedback-btn" href="#" id="send-feedback"><span>Форма обратной связи</span></a>
+        </div>
+    </div>
+
+     <div class="main-content-wrapper">
       <footer class="footer-wrapper clearfix">
           <div class="footer-item footer-social-net-block clearfix">
               <a class="social-net-link twitter-icon" href="#tw">
@@ -397,7 +401,7 @@
           </div>
 
       </footer>
-    </div>
+     </div>
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
            <a class="feedback-form-close" href="#" id="form-close">
@@ -430,7 +434,7 @@
       <div class="overlay"></div>
     </div>
 
-    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SR5GA5S2JvKTqaGbvVZP1AC3W0Rc52yW&width=900&height=431&id=contact-map&lang=ru_RU&sourceType=constructor"></script>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SR5GA5S2JvKTqaGbvVZP1AC3W0Rc52yW&width=100%&height=431&id=contact-map&lang=ru_RU&sourceType=constructor"></script>
 
     <script type="text/javascript" charset="utf-8" src="js/scripts.js"></script>
   </body>
