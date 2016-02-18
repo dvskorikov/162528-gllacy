@@ -7,8 +7,12 @@
         <link href="css/style.css" rel="stylesheet">
         <title>HTML Academy: Глейси - Каталог</title>
     </head>
-    <body class="secondary-page-bg">
-     <div class="body-slider-wrapper">
+    <body>
+      <input type="radio" id="slider-btn1" name="slider-btns" checked>
+      <input type="radio" id="slider-btn2" name="slider-btns">
+      <input type="radio" id="slider-btn3" name="slider-btns">
+
+     <div class="body-slider-wrapper-secondary">
        <div class="main-content-wrapper">
       <header class="header-wrapper clearfix">
           <a class="main-menu-logo" href="index.html"><img class="main-logo" src="img/logo.png" width="154" height="64" alt="логотип"></a>
@@ -60,12 +64,12 @@
               </a>
 
               <form class="top-menu-login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="top-menu-fields top-menu-fields-pos login-form-email" type="text" name="login-form-email" required>
+                  <input class="top-menu-fields top-menu-fields-pos login-form-email" type="text" name="login-form-email">
                   <div class="placeholder-label-box1 top-menu-ph-pos">
                     <label class="label-placeholder">Электронная почта</label>
                   </div>
 
-                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd" required>
+                  <input class="top-menu-fields login-form-passwd" type="password" name="login-form-passwd">
                   <div class="placeholder-label-box top-menu-pass-pos">
                     <label class="label-placeholder">Пароль</label>
                   </div>
@@ -454,5 +458,6 @@
       </footer>
       </div>
      </div>
+      <script type="text/javascript" charset="utf-8" src="js/secondary.js"></script>
     </body>
 </html>
