@@ -426,7 +426,6 @@ h3 {
 .top-menu-backet:hover {
   visibility: visible;
   opacity: 1;
-
 }
 
 .search-btn:hover .global-search-field-wrapper {
@@ -1516,6 +1515,10 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
   text-decoration: none;
 }
 
+.small-heart-icon {
+  font-weight: bold;
+}
+
 .small-heart-icon::before {
   position: relative;
   top: 3px;
@@ -1667,10 +1670,6 @@ input[name="slider-btns"] {
   padding: 0 10px;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
-}
-
-.global-search-field1:focus {
-
 }
 
 .top-menu-fields {
