@@ -3,7 +3,7 @@ body {
   line-height: 22px;
   color: black;
   font-weight: normal;
-  font-family: "Roboto", "Times New Roman", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .main-content-wrapper {
@@ -41,15 +41,15 @@ body {
   background-image: url(../img/slider-main-pic3.png);
 }
 
-#slider-btn1:checked ~ .body-slider-wrapper-secondary {
+.slider1-color {
   background-color: #849d8f;
 }
 
-#slider-btn2:checked ~ .body-slider-wrapper-secondary {
+.slider2-color {
   background-color: #8996a6;
 }
 
-#slider-btn3:checked ~ .body-slider-wrapper-secondary {
+.slider3-color {
   background-color: #9d8b84;
 }
 
@@ -79,7 +79,6 @@ h2 {
   line-height: 60,35;
   color: #fcefd0;
   font-weight: normal;
-  font-family: "Roboto", "Times New Roman", sans-serif;
 }
 
 h3 {
@@ -88,7 +87,6 @@ h3 {
   line-height: normal;
   color: white;
   font-weight: bold;
-  font-family: "Roboto", "Times New Roman", sans-serif;
 }
 
 .clearfix {
@@ -223,6 +221,7 @@ h3 {
 
 .login-block {
   position: relative;
+  vertical-align: top;
   display: inline-block;
   text-align: left;
   width: 270px;
@@ -254,7 +253,7 @@ h3 {
 
 .top-menu-backet {
   top: 31px;
-  left: -331.5%;
+  left: -327.5%;
   width: 523px;
   height: 226px;
   padding-top: 13px;
@@ -363,8 +362,13 @@ h3 {
   background-position: -158px -0px;
 }
 
-.menu-basket-icon {
-  padding: 8px 33px 7px 43px;
+.menu-basket-icon,
+.menu-basket-icon-goods {
+  padding: 8px 16px 7px 43px;
+}
+
+.backet-btn {
+  padding-right: 34px;
 }
 
 .menu-basket-icon::before {
@@ -383,7 +387,7 @@ h3 {
   background-position: -133px -62px;
 }
 
-.menu-basket-icon:active::before {
+.menu-basket-icon-goods::before {
   left: 14px;
   top: 5px;
   height: 20px;
@@ -413,14 +417,15 @@ h3 {
 
 .menu-search-icon:hover,
 .menu-login-icon:hover,
-.menu-basket-icon:hover {
+.menu-basket-icon:hover,
+.menu-basket-icon-goods:hover {
   background-color: #f8f7f4;
   transition: 0.5s ease-in-out;
 }
 
 .search-btn:hover + .global-search-field,
 .login-btn:hover + .top-menu-login-form,
-.backet-btn:hover + .top-menu-backet,
+.menu-basket-icon-goods:hover + .top-menu-backet,
 .global-search-field:hover,
 .top-menu-login-form:hover,
 .top-menu-backet:hover {
@@ -569,6 +574,7 @@ h3 {
 
 .announce-block-btn1 span,
 .announce-block-btn2 span {
+  vertical-align: bottom;
   display: inline-block;
   font-size: 17px;
   font-weight: bold;
@@ -601,11 +607,11 @@ h3 {
 
 .quick-order-item {
   position: relative;
+  vertical-align: top;
   z-index: 5;
   display: inline-block;
   width: 22.5%;
   margin: 0 1.6% 37px 0;
-  vertical-align: top;
   font-size: 16px;
 }
 
@@ -709,6 +715,7 @@ h3 {
 
 .about-gllacy-advantage > .about-gllacy-descrip-pos1 {
   padding-left: 58px;
+  padding-right: 5px;
 }
 
 .about-gllacy-small-icon::before {
@@ -755,7 +762,7 @@ h3 {
 .feedback-form-map-block {
   position: absolute;
   right: 2.3%;
-  top: 301%;
+  bottom: 160%;
   z-index: 1;
   width: 301px;
   height: 305px;
@@ -797,6 +804,7 @@ h3 {
 
 .map-wrapper {
   position: relative;
+  vertical-align: top;
   display: inline-block;
   width: 100%;
   min-width: 900px;
@@ -813,6 +821,7 @@ h3 {
 }
 
 .footer-wrapper {
+  vertical-align: top;
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
@@ -831,33 +840,29 @@ h3 {
   position: absolute;
   left: 2.3%;
   right: 2.3%;
-  height: 1px;
   display: block;
+  margin-top: -15px;
+  height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-item {
-  float: left;
-  margin-right: 2.17%;
   font-size: 16px;
 }
 
 .footer-item:last-child {
   float: right;
-  margin-right: -31px;
 }
 
 .footer-social-net-block,
 .footer-made-by-block {
   position: relative;
-  left: -25px;
-  top: 23px;
-  width: 23%;
+  float: left;
+  width: 193px;
 }
 
-.footer-made-by-block {
-  width: 194px;
-  margin-top: -20px;
+.footer-social-net-block {
+  top: 10px;
 }
 
 .footer-made-by-block-secondary {
@@ -865,25 +870,24 @@ h3 {
 }
 
 .footer-quick-links-block {
+  vertical-align: top;
+  top: 10px;
   display: inline-block;
-  width: 33%;
-  margin-top: 14px;
-  margin-left: -139px;
   color: white;
-  text-align: center;
   font-size: 13px;
 }
 
 .btn {
+  vertical-align: middle;
   display: inline-block;
-  background: linear-gradient(to bottom, #f16743, #e74b37);
+  padding: 5px 24px;
   color: white;
   text-decoration: none;
-  padding: 5px 24px;
   border: none;
   border-radius: 25px;
   box-shadow: 0 4px 5px -3px #ac1202;
   outline: none;
+  background: linear-gradient(to bottom, #f16743, #e74b37);
 }
 
 .btn:hover {
@@ -959,6 +963,7 @@ h3 {
 }
 
 .breadcrumbs-list > li {
+  vertical-align: top;
   display: inline-block;
   padding-bottom: 10px;
   font-size: 14px;
@@ -966,8 +971,9 @@ h3 {
 }
 
 .breadcrumbs-list > li::after {
-  display: inline-block;
   content: "»";
+  vertical-align: top;
+  display: inline-block;
   margin: 0 7px;
   font-weight: 14px;
   color: white;
@@ -1015,9 +1021,9 @@ h3 {
 }
 
 .filter-form-item {
+  vertical-align: top;
   display: inline-block;
   margin-right: 14px;
-  vertical-align: top;
   font-size: 16px;
   color: white;
 }
@@ -1118,8 +1124,9 @@ h3 {
 
 .filter-form-fat-level-lbl-radio,
 .filter-form-filler-lbl {
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 10px;
   padding-left: 35px;
   cursor: pointer;
@@ -1221,13 +1228,13 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 }
 
 .filter-form-btn {
+  vertical-align: bottom;
   display: inline-block;
   height: 36px;
   width: 143px;
   font-size: 16px;
   text-align: center;
   color: white;
-  vertical-align: bottom;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid white;
@@ -1255,12 +1262,13 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 
 .paginator {
   float: right;
-  margin: 45px 17px 34px 0;
+  margin: 45px 17px 51px 0;
   font-size: 0;
 }
 
 .paginator a {
   position: relative;
+  vertical-align: middle;
   display: inline-block;
   height: 25px;
   width: 25px;
@@ -1271,7 +1279,6 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
   font-weight: bold;
   line-height: 25px;
   text-decoration: none;
-  vertical-align: middle;
   text-align: center;
   background-color: none;
   border-radius: 50%;
@@ -1367,6 +1374,7 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 
 .news-block-background {
   position: relative;
+  vertical-align: middle;
   display: inline-block;
   width: 97.85%;
   min-width: 409px;
@@ -1392,7 +1400,7 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 }
 
 .contact-map {
-  background: #dee0d0 url(../img/map-block-bg-1200.jpg) center 0px no-repeat;
+  background: transparent url(../img/map-block-bg-1200.jpg) center 0px no-repeat;
 }
 
 .announce-header {
@@ -1436,25 +1444,30 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 }
 
 .top-menu-search-btn-wrapper {
+  vertical-align: middle;
   display: inline-block;
 }
 
 .top-menu-basket-wrapper {
   position: relative;
+  vertical-align: top;
   display: inline-block;
 }
 
 .login-menu-positioning {
-  float: left;
+  float: right;
+  width: 271px;
 }
 
 .social-net-link {
+  vertical-align: middle;
   display: inline-block;
   margin-left: -4px;
   margin-right: 17px;
 }
 
 .social-net-link::before {
+  vertical-align: middle;
   content: "";
   height: 32px;
   width: 32px;
@@ -1521,12 +1534,13 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 
 .small-heart-icon::before {
   position: relative;
+  vertical-align: top;
   top: 3px;
   left: -3px;
   content: "";
+  display: inline-block;
   height: 13px;
   width: 15px;
-  display: inline-block;
   background: url(../img/sprite.png) no-repeat 0 0;
   background-position: -158px -89px;
 }
@@ -1538,6 +1552,7 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 }
 
 .slider-btns label[for^="slider-btn"] {
+  vertical-align: middle;
   top: 10px;
   left: 20px;
   display: inline-block;
@@ -1748,6 +1763,7 @@ textarea {
 }
 
 .get-email-btn {
+  vertical-align: top;
   display: inline-block;
   right: 19px;
   bottom: 34px;
@@ -1759,9 +1775,9 @@ textarea {
 }
 
 .footer-quick-links-block > div {
+  vertical-align: top;
   display: inline-block;
   width: 138px;
-  vertical-align: top;
   text-align: left;
 }
 
@@ -1903,14 +1919,9 @@ textarea:valid:not(:focus) ~ .placeholder-label-box2 label {
   outline: none;
 }
 
-/*
-.secondary-page-bg {
-  background-color: #849d8f;
-}
-*/
-
 .get-email-field-wrapper {
   position: relative;
+  vertical-align: top;
   display: inline-block;
   width: 67%;
   padding-left: 21px;

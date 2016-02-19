@@ -3,22 +3,26 @@ var login_btn = document.querySelector(".login-btn");
 var login = login_form.querySelector("[name=login-form-email]");
 var passwd = login_form.querySelector("[name=login-form-passwd]");
 
-var slider1 = document.getElementById("slider-btn1");
-var slider2 = document.getElementById("slider-btn2");
-var slider3 = document.getElementById("slider-btn3");
+var bg_color = document.querySelector(".body-slider-wrapper-secondary");
 var slider = localStorage.getItem("slider");
 
 switch (slider) {
   case "slider1": {
-    slider1.checked = true
+    bg_color.classList.remove("slider2-color")
+    bg_color.classList.remove("slider3-color")
+    bg_color.classList.add("slider1-color")
     break;
     }
   case "slider2": {
-    slider2.checked = true
+    bg_color.classList.remove("slider1-color")
+    bg_color.classList.remove("slider3-color")
+    bg_color.classList.add("slider2-color")
     break;
     }
   case "slider3": {
-    slider3.checked = true
+    bg_color.classList.remove("slider1-color")
+    bg_color.classList.remove("slider2-color")
+    bg_color.classList.add("slider3-color")
     break;
     }
 };
