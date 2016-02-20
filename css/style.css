@@ -282,6 +282,20 @@ h3 {
   text-align: left;
 }
 
+.backet-table-link-del-btn {
+  width: 11px;
+  height: 11px;
+  display: block;
+}
+
+.backet-table-link-del-btn:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: url(../img/sprite.png) no-repeat -158px -102px;
+}
+
 .backet-table-cell-item-pict {
   width: 46px;
   padding-top: 4px;
@@ -1440,7 +1454,7 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
   width: 31px;
   height: 36px;
   position: absolute;
-  background: url(../img/ruble-symbol-icon.png) no-repeat 0 0;
+  background: url(../img/sprite.png) -98px -49px no-repeat;
 }
 
 .top-menu-search-btn-wrapper {
