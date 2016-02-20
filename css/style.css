@@ -76,7 +76,7 @@ body {
 h2 {
   margin: 0;
   font-size: 60px;
-  line-height: 60,35;
+  line-height: 60px;
   color: #fcefd0;
   font-weight: normal;
 }
@@ -223,8 +223,9 @@ h3 {
   position: relative;
   vertical-align: top;
   display: inline-block;
-  text-align: left;
   width: 270px;
+  text-align: left;
+  font-size: 0;
 }
 
 .top-menu-login-form,
@@ -989,7 +990,7 @@ h3 {
   vertical-align: top;
   display: inline-block;
   margin: 0 7px;
-  font-weight: 14px;
+  font-size: 14px;
   color: white;
 }
 
@@ -1460,6 +1461,7 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 .top-menu-search-btn-wrapper {
   vertical-align: middle;
   display: inline-block;
+  margin-right: 4px;
 }
 
 .top-menu-basket-wrapper {
