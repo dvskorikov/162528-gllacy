@@ -223,7 +223,7 @@ h3 {
   position: relative;
   vertical-align: top;
   display: inline-block;
-  width: 270px;
+  width: 272px;
   text-align: left;
   font-size: 0;
 }
@@ -1469,13 +1469,13 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
   vertical-align: top;
   display: inline-block;
   margin-right: 0;
-  background-color: lightgreen;
+/*  background-color: lightgreen;*/
 }
 
 .login-menu-positioning {
   float: right;
-  width: 290px;
-  background-color: black;
+  width: 272px;
+/*  background-color: black;*/
 }
 
 .social-net-link {
