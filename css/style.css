@@ -1469,11 +1469,13 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
   vertical-align: top;
   display: inline-block;
   margin-right: 0;
+  background-color: lightgreen;
 }
 
 .login-menu-positioning {
   float: right;
-  width: 274px;
+  width: 275px;
+  background-color: black;
 }
 
 .social-net-link {
