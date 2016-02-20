@@ -224,7 +224,7 @@ h3 {
   vertical-align: top;
   display: inline-block;
   width: 280px;
-  text-align: right;
+/*  text-align: right;*/
   font-size: 0;
 }
 
@@ -238,6 +238,7 @@ h3 {
   display: block;
   width: 272px;
   height: 175px;
+  text-align: left;
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0 16px 25px 5px rgba(0, 0, 0, 0.3);
@@ -248,13 +249,13 @@ h3 {
 }
 
 .top-menu-login-form {
-  top: 31px;
-  left: -128px;
+  top: 36px;
+  left: -119px;
 }
 
 .top-menu-backet {
-  top: 31px;
-  left: -327.5%;
+  top: 36px;
+  left: -321%;
   width: 523px;
   height: 226px;
   padding-top: 13px;
@@ -334,11 +335,16 @@ h3 {
 }
 
 .top-menu-btn {
+  vertical-align: middle;
   position: relative;
+  display: inline-block;
   text-decoration: none;
   width: 50px;
+  height: 32px;
+  margin: 0;
   margin-left: 10px;
-  padding: 8px 8px 7px 33px;
+/*  padding: 8px 8px 7px 33px;*/
+  padding: 0 8px 0 33px;
   color: #ffffff;
   font-size: 14px;
   border-radius: 15px;
@@ -357,8 +363,10 @@ h3 {
 }
 
 .menu-login-icon {
-  padding: 8px 14px 7px 44px;
-  margin-left: 6px;
+/*  padding: 8px 14px 7px 44px;*/
+/*  margin-left: 6px;*/
+  text-align: center;
+  line-height: 2.1;
 }
 
 .menu-login-icon::before {
@@ -379,15 +387,24 @@ h3 {
 
 .menu-basket-icon,
 .menu-basket-icon-goods {
-  padding: 8px 16px 7px 43px;
+/*  padding: 8px 16px 7px 43px;*/
+  padding-right: 34px;
+  line-height: 2.1;
+  white-space: nowrap;
 }
 
 .backet-btn {
   padding-right: 34px;
+  line-height: 2.1;
+}
+
+.menu-basket-icon-goods {
+  padding-right: 24px;
+  padding-left: 44px;
 }
 
 .menu-basket-icon::before {
-  left: 14px;
+  left: 16px;
   top: 5px;
   height: 20px;
   width: 21px;
@@ -395,7 +412,7 @@ h3 {
 }
 
 .menu-basket-icon:hover::before {
-  left: 14px;
+  left: 16px;
   top: 5px;
   height: 20px;
   width: 21px;
@@ -403,7 +420,7 @@ h3 {
 }
 
 .menu-basket-icon-goods::before {
-  left: 14px;
+  left: 16px;
   top: 5px;
   height: 20px;
   width: 21px;
@@ -411,7 +428,9 @@ h3 {
 }
 
 .menu-search-icon {
-  padding: 10px 8px 5px 23px;
+/*  padding: 10px 8px 5px 23px;*/
+  width: 32px;
+  padding: 0;
 }
 
 .menu-search-icon::before {
@@ -461,8 +480,8 @@ h3 {
 
 .global-search-field {
   position: absolute;
-  top: 31px;
-  left: -111.5%;
+  top: 36px;
+  left: -104%;
   z-index: 150;
 
   display: block;
@@ -1461,7 +1480,8 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 .top-menu-search-btn-wrapper {
   vertical-align: middle;
   display: inline-block;
-  margin-right: 5px;
+  text-align: left;
+/*  margin-right: 5px;*/
 }
 
 .top-menu-basket-wrapper {
@@ -1473,6 +1493,8 @@ input[type="checkbox"]:checked:disabled + .filter-form-filler-lbl::before {
 }
 
 .login-menu-positioning {
+  position: relative;
+  top: -5px;
   float: right;
   width: 100%;
 /*  background-color: black;*/
@@ -1905,6 +1927,7 @@ textarea:valid:not(:focus) ~ .placeholder-label-box2 label {
 
 .label-search-pos {
   left: 24px;
+  font-size: 16px;
 }
 
 .top-menu-ph-pos {
